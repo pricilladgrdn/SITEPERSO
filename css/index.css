@@ -63,36 +63,48 @@ url('../font/spina-regular-regular-webfont.svg#spina-regularregular') format('sv
 
 
 
-	section { 
-		
+	section {
 		z-index:1; 
 		list-style-type: none;
 		text-decoration: none;	
 		display:block;
 	}
 
-		ul a, ul a:link, ul a:visited {
-			position:absolute;
-			margin-left: -22px;
-			text-decoration:none;
-			font-family: 'spina-regularregular';
-			font-size: 19px;
-			text-align: center;
-			color:#1AFBB8;
-			width: 22px;
-			height: 22px;
-			color:white;
-			background-color: #551CFF;
-			}
+	li a, li a:link, li a:visited {
+		position:absolute;
+		top:0;
+		right:0;
+		text-decoration:none;
+		font-family: 'spina-regularregular';
+		font-size: 19px;
+		text-align: center;
+		color:#1AFBB8;
+		width: 22px;
+		height: 22px;
+		color:white;
+		background-color: #551CFF;
+		display: none;
 
-		ul a:hover {
-			color:white;
-			background-color: #1AFBB8;
-			}
+		/*{ position:absolute; bottom:0; left:0; display:none; width:20px; height:20px;
+		 text-align:center; line-height:18px; font-size:18px; background:#fe4a5d; 
+		 color:#fff; text-decoration:none; } */
+	}
 
-		li {
-			list-style-type: none;
-			}
+	li:hover a {
+		display: block;
+	}
+
+	li a:hover {
+		color:white;
+		background-color: #1AFBB8;
+	}
+
+	li {
+		height:auto;
+		width:auto;
+		list-style-type: none;
+		position:absolute;
+	}
 
 
 /* I N F O  D E  C O N T A C T */

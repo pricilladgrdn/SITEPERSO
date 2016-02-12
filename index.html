@@ -33,88 +33,99 @@
 
 <section>
 	<article>
-						<ul class="images">
-			
-			
-		
-             <li style="top:400px;left:200px;">
-				<img src="Images/SITE_standjpo.jpg" alt="Pricilla Degardin stand jpo isdat motif Justine Harmand"/>				
+		<ul class="images">
+            <li>
+				<img src="Images/SITE_standjpo.jpg" alt="Pricilla Degardin stand jpo isdat motif Justine Harmand"/>
                 <a href="projet_standjpo.html">&#10697;</a>  
 			</li>
-            <li style="top:-20px;left:400px;">
+            <li>
 				<img src="Images/SITE_bbb.png" alt="Pricilla Degardin"/>				
                 <a href="projet_bbb.html">&#10697;</a>  
 			</li>
-             <li style="top:-30px;left:900px;">
+             <li>
 				<img src="Images/SITE_chambord.png" alt="Pricilla Degardin"/>				
                 <a href="projet_chambord.html">&#10697;</a>  
 			</li>
-			<li style="top:110px;left:700px;">
+			<li>
 				<img src="Images/SITE_photocemes.jpg" alt="Pricilla Degardin"/>				
                 <a href="projet_photocemes.html">&#10697;</a>  
 			</li>
-            <li style="top:110px;left:700px;">
+            <li>
 				<img src="Images/SITE_villes.png" alt="Pricilla Degardin"/>				
                 <a href="projet_villes.html">&#10697;</a>  
 			</li>
-            <li style="top:30px;left:50px;">
+            <li>
 				<img src="Images/SITE_lettrage.gif" alt="Pricilla Degardin"/>				
                 <a href="projet_lettrage.html">&#10697;</a>  
 			</li>
-             <li style="top:300px;left:10px;">
+             <li>
 				<img src="Images/SITE_horsdoeuvre.jpg" alt="Pricilla Degardin"/>				
                 <a href="projet_horsdoeuvre.html">&#10697;</a>  
 			</li>
-           <li style="top:200px;left:300px;">
+           <li>
 				<img src="Images/SITE_nuagedidactique.png" alt="Pricilla Degardin"/>				
                 <a href="nuagedidactique.html">&#10697;</a>
 			</li>
-            <li style="top:10px;left:200px;">
+            <li>
 				<img src="Images/SITE_nuagepoetique.png" alt="Pricilla Degardin"/>				
                 <a href="projet_nuagepoetique.html">&#10697;</a>  
 			</li>
-		    <li style="top:315px;left:810px;">
+		    <li>
 				<img src="Images/SITE_secret.gif" alt="Pricilla Degardin"/>				
                 <a href="projet_secret.html">&#10697;</a>  
 			</li>
-            <li style="top:290px;left:450px;">
+            <li>
 				<img src="Images/SITE_interdit.png" alt="Pricilla Degardin"/>				
                 <a href="projet_interdit.html">&#10697;</a>  
 			</li>
-            <li style="top:100px;left:40px;">
+            <li>
 				<img src="Images/SITE_cartes.png" alt="Pricilla Degardin"/>				
                 <a href="projet_cartes.html">&#10697;</a>  
 			</li>
-            <li style="top:300px;left:100px;">
+            <li>
 				<img src="Images/SITE_papillon.png" alt="Pricilla Degardin"/>				
                 <a href="projet_papillon.html">&#10697;</a>  
 			</li>
-            <li style="top:300px;left:800px;">
+            <li>
 				<img src="Images/SITE_transhumance.jpg" alt="Pricilla Degardin"/>				
                 <a href="projet_transhumance.html">&#10697;</a>  
 			</li>
-             <li style="top:400px;left:900px;">
+             <li>
 				<img src="Images/SITE_kertesz.png" alt="Pricilla Degardin"/>				
                 <a href="projet_kertesz.html">&#10697;</a>  
 			</li>
-             <li style="top:100px;left:300px;">
+             <li>
 				<img src="Images/SITE_4d.png" alt="Pricilla Degardin"/>				
                 <a href="projet_4d.html">&#10697;</a>
-             <li style="top:100px;left:550px;">
+             <li>
 				<img src="Images/SITE_motif.jpg" alt="Pricilla Degardin motif"/>				
                 <a href="projet_motif.html">&#10697;</a>  
 			</li>
-          
-           
 		</ul>
 
 
 		<script>
-		$(function() {
-			$('ul.images li').mousedown(function(){
-				$(this).css('z-index', 10).siblings().css('z-index', 1);
-			}).draggable();
-		});
+			$(function() {
+				$('ul.images li').mousedown(function() {
+					$(this).css('z-index', 100).siblings().each(function() {
+						style = window.getComputedStyle($(this)[0]);
+						zindex = style.getPropertyValue('z-index');
+						$(this).css('z-index', zindex - 1);
+					});
+				}).draggable();
+			});
+
+			function randomize(min, max) {
+	    		return Math.floor((Math.random() * max) + min);
+			}
+
+			$(function() {
+				$('ul.images li').each(function() {
+					$(this).css('top', randomize(100, 300))
+						   .css('left', randomize(100, 800))
+						   .css('z-index', randomize(1, 100));
+				});
+			});
 		</script>
         
 	</article>
