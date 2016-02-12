@@ -104,6 +104,7 @@ url('../font/spina-regular-regular-webfont.svg#spina-regularregular') format('sv
 		width:auto;
 		list-style-type: none;
 		position:absolute;
+		cursor:move;
 	}
 
 
