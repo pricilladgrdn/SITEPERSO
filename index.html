@@ -98,41 +98,42 @@
 				</li>
 			</ul>
 
-	<script type="text/javascript" src="libs/move.js-master/move.min.js"></script>
-			<script>
-				var tmp = 20;
-				function skew() {
-		    			move('body')
-							.skew(tmp)
-							.set('height', 20)
-							.end();
-						tmp = -tmp;
-				}
-
-				function randomize(min, max) {
-		    		return Math.floor((Math.random() * max) + min);
-				}
-
-				$(function() {
-					$('ul.images li').mousedown(function() {
-						$(this).css('z-index', 100).siblings().each(function() {
-							style = window.getComputedStyle($(this)[0]);
-							zindex = style.getPropertyValue('z-index');
-							$(this).css('z-index', zindex - 1);
-						});
-					}).draggable();
-
-					$('ul.images li').each(function() {
-						$(this).css('top', randomize(100, 300))
-							   .css('left', randomize(100, 800))
-							   .css('z-index', randomize(1, 100));
-					});
-				});
-
-			</script>
-
-			</article>
+		</article>
 	</section>
 
+	<script type="text/javascript" src="libs/move.js-master/move.min.js"></script>
+	<script>
+			var tmp = 20;
+			function skew() {
+	    			move('section')
+						.skew(tmp)
+						.end();
+					if(tmp == 20)
+						tmp =  0;
+					else
+						tmp = 20;
+			}
+
+			function randomize(min, max) {
+	    		return Math.floor((Math.random() * max) + min);
+			}
+
+			$(function() {
+				$('ul.images li').mousedown(function() {
+					$(this).css('z-index', 100).siblings().each(function() {
+						style = window.getComputedStyle($(this)[0]);
+						zindex = style.getPropertyValue('z-index');
+						$(this).css('z-index', zindex - 1);
+					});
+				}).draggable();
+
+				$('ul.images li').each(function() {
+					$(this).css('top', randomize(100, 300))
+						   .css('left', randomize(100, 800))
+						   .css('z-index', randomize(1, 100));
+				});
+			});
+
+	</script>
 </body>
 </html>
