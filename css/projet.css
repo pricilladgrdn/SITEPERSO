@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'spina-regularregular';
+    src: url('../font/spina-regular-regular-webfont.eot');
+    src: url('../font/spina-regular-regular-webfont.eot?#iefix') format('embedded-opentype'),
+url('../font/spina-regular-regular-webfont.woff2') format('woff2'),
+url('../font/spina-regular-regular-webfont.woff') format('woff'),
+url('../font/spina-regular-regular-webfont.ttf') format('truetype'),
+url('../font/spina-regular-regular-webfont.svg#spina-regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+	
+	.boite{
+		/*border: solid 2px #0F0;
+		padding: 10px;*/
+		font-family: 'spina-regularregular';
+		font-size: 22px;
+		
+	}
+
+/* M E N U  P A G E  D ' A C C U E I L */
+/* M E N U  P A G E  D ' A C C U E I L */
+
+	#prenom{
+		position: fixed;
+		top: 40px;
+		left: 5%;
+	}
+
+
+	#archive{
+		position: fixed;
+		top: 40px;
+		left: 47%;
+	}
+	#contact{
+		position: fixed;
+		top: 40px;
+		left: 90%;
+	}
+
+/* L I E N S  M E N U */
+/* L I E N S  M E N U */
+
+		#prenom a, #prenom a:link, #prenom a:visited,
+		#archive a, #archive a:link, #archive a:visited, 
+		#contact a, #contact a:link, #contact a:visited { 
+			text-decoration: none;
+			font-family: 'spina-regularregular';
+			font-size: 22px;
+			color:#551CFF;
+			}
+
+		#prenom a:hover, #archive a:hover, #contact a:hover { 
+			color:#1AFBB8;
+			}
+
+
+
+/* S E C T I O N  */
+/* S E C T I O N  */
+
+
+
+
+	section {
+		z-index:1; 
+		list-style-type: none;
+		text-decoration: none;	
+		display:block;
+	}
+
+	li a, li a:link, li a:visited {
+		position:absolute;
+		top:0;
+		right:0;
+		text-decoration:none;
+		font-family: 'spina-regularregular';
+		font-size: 19px;
+		text-align: center;
+		color:#1AFBB8;
+		width: 22px;
+		height: 22px;
+		color:white;
+		background-color: #551CFF;
+		display: none;
+
+		/*{ position:absolute; bottom:0; left:0; display:none; width:20px; height:20px;
+		 text-align:center; line-height:18px; font-size:18px; background:#fe4a5d; 
+		 color:#fff; text-decoration:none; } */
+	}
+
+	li:hover a {
+		display: block;
+	}
+
+	li a:hover {
+		color:white;
+		background-color: #1AFBB8;
+	}
+
+	li {
+		height:auto;
+		width:auto;
+		list-style-type: none;
+		position:absolute;
+		cursor:move;
+	}
+
+
+/* I N F O  D E  C O N T A C T */
+/* I N F O  D E  C O N T A C T */
+
+#texte {
+	position:absolute;
+	color: #551CFF;
+	font-size: 20px;
+	top: 100px;
+	left: 5%;
+
+}
+
+#texte a{
+color: #551CFF;
+text-decoration: none;
+
+}
+
+#texte a:hover{
+color: #1AFBB8;
+text-decoration: none;
+
+}
+
+#texte img{
+margin-left:-40px;
+
+
+}
+
+#description{
+	position: fixed;
+border:solid 2px #551CFF;
+padding:10px;
+width:200px;
+margin-top: 50px;
+margin-left: 100px;
+color: #551CFF;
+background-color: white;
+font-family: 'spina-regularregular';
+font-size: 13px;
+
+}
+
+#images {
+margin-top: 60px;
+margin-left: 250px;
+
+}
+
+
+
+
