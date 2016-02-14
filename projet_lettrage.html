@@ -31,12 +31,9 @@
 
 	
 		<div id="description">
-<p>Installation
+<p>Lettrages
 </br></br>
-Stand de motifs réalisé en collaboration avec Justine Harmand, lors des journées portes ouvertes de l'ISDAT de Toulouse.
-</br>
-Production évolutive du 6 au 7 mars 2015.
-</br>
+
 
 
 
@@ -45,9 +42,36 @@ Production évolutive du 6 au 7 mars 2015.
 	</p>
 		</div>
 
-		<div id="images">
-			<img src="Images/stand_1.gif"/>
+			<!--<div id="images" onclick="next()">
+			<img id="img1" src="Images/projet_horsdoeuvre/hors1.jpg" style="z-index:1"/>
+			<img id="img2" src="Images/projet_horsdoeuvre/hors2.jpg" style="z-index:-1"/>
+			<img id="img3" src="Images/projet_horsdoeuvre/hors3.jpg" style="z-index:-1"/>
+			<img id="img4" src="Images/projet_horsdoeuvre/hors4.jpg" style="z-index:-1"/>
+			<img id="img5" src="Images/projet_horsdoeuvre/hors5.jpg" style="z-index:-1"/>
+			<img id="img6" src="Images/projet_horsdoeuvre/hors6.jpg" style="z-index:-1"/>
+			<img id="img7" src="Images/projet_horsdoeuvre/hors7.jpg" style="z-index:-1"/>
+			<img id="img8" src="Images/projet_horsdoeuvre/hors8.jpg" style="z-index:-1"/>
+			<img id="img9" src="Images/projet_horsdoeuvre/hors9.jpg" style="z-index:-1"/>
+			<img id="img10" src="Images/projet_horsdoeuvre/hors10.jpg" style="z-index:-1"/>
+			<img id="img11" src="Images/projet_horsdoeuvre/hors11.jpg" style="z-index:-1"/>
+			<img id="img12" src="Images/projet_horsdoeuvre/hors12.jpg" style="z-index:-1"/>
+			<img id="img13" src="Images/projet_horsdoeuvre/hors13.jpg" style="z-index:-1"/>
+			<img id="img14" src="Images/projet_horsdoeuvre/hors14.jpg" style="z-index:-1"/>-->
+			
+			
+			
+			
    		 </div>
+
+<script>
+   		 	var tmp = 1;
+			function next() {
+					tmp++;
+					if(tmp == 15)
+						tmp = 1;
+	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
+			}
+   		 </script>
 
 
 

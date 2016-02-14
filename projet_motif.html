@@ -31,10 +31,9 @@
 
 	
 		<div id="description">
-<p>Édition
+<p>Dessin
 </br></br>
-CÉMES</br>
-</br>
+
 
 
 
@@ -43,9 +42,26 @@ CÉMES</br>
 	</p>
 		</div>
 
-		<div id="images">
-			<img src="Images/IMG_1451.JPG"/>
+		<div id="images" onclick="next()">
+			<!--<img id="img1" src="Images/projet_andre/akaffiche.jpg" style="z-index:1"/>
+			<img id="img2" src="Images/projet_andre/ak1.jpg" style="z-index:-1"/>
+			<img id="img3" src="Images/projet_andre/ak2.jpg" style="z-index:-1"/>
+			<img id="img4" src="Images/projet_andre/ak3.jpg" style="z-index:-1"/>
+			<img id="img5" src="Images/projet_andre/ak4.jpg" style="z-index:-1"/>
+			<img id="img6" src="Images/projet_andre/ak5.jpg" style="z-index:-1"/>
+			<img id="img7" src="Images/projet_andre/ak6.jpg" style="z-index:-1"/>-->
+			
    		 </div>
+
+<script>
+   		 	var tmp = 1;
+			function next() {
+					tmp++;
+					if(tmp == 8)
+						tmp = 1;
+	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
+			}
+   		 </script>
 
 
 

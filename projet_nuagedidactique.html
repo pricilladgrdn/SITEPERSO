@@ -33,7 +33,7 @@
 		<div id="description">
 <p>Édition
 </br></br>
-CÉMES</br>
+Nuage didactique</br>
 </br>
 
 
@@ -43,9 +43,48 @@ CÉMES</br>
 	</p>
 		</div>
 
-		<div id="images">
-			<img src="Images/IMG_1451.JPG"/>
+		<div id="images" onclick="next()">
+			<img id="img1" src="Images/projet_nuagedidactique/didactique1.jpg" style="z-index:1"/>
+			<img id="img2" src="Images/projet_nuagedidactique/didactique2.jpg" style="z-index:-1"/>
+			<img id="img3" src="Images/projet_nuagedidactique/didactique3.jpg" style="z-index:-1"/>
+			<img id="img4" src="Images/projet_nuagedidactique/didactique4.jpg" style="z-index:-1"/>
+			<img id="img5" src="Images/projet_nuagedidactique/didactique5.jpg" style="z-index:-1"/>
+			<img id="img6" src="Images/projet_nuagedidactique/didactique6.jpg" style="z-index:-1"/>
+			<img id="img7" src="Images/projet_nuagedidactique/didactique7.jpg" style="z-index:-1"/>
+			<img id="img8" src="Images/projet_nuagedidactique/didactique8.jpg" style="z-index:-1"/>
+			<img id="img9" src="Images/projet_nuagedidactique/didactique9.jpg" style="z-index:-1"/>
+			<img id="img10" src="Images/projet_nuagedidactique/didactique10.jpg" style="z-index:-1"/>
+			<img id="img11" src="Images/projet_nuagedidactique/didactique11.jpg" style="z-index:-1"/>
+			<img id="img12" src="Images/projet_nuagedidactique/didactique12.jpg" style="z-index:-1"/>
+			<img id="img13" src="Images/projet_nuagedidactique/didactique13.jpg" style="z-index:-1"/>
+			<img id="img14" src="Images/projet_nuagedidactique/didactique14.jpg" style="z-index:-1"/>
+			<img id="img15" src="Images/projet_nuagedidactique/didactique15.jpg" style="z-index:-1"/>
+			<!--<img id="img10" src="Images/projet_nuagedidactique/didactique16.jpg" style="z-index:-1"/>
+			<img id="img11" src="Images/projet_nuagedidactique/didactique17.jpg" style="z-index:-1"/>
+			<img id="img12" src="Images/projet_nuagedidactique/didactique18.jpg" style="z-index:-1"/>
+			<img id="img13" src="Images/projet_nuagedidactique/didactique19.jpg" style="z-index:-1"/>
+			<img id="img14" src="Images/projet_nuagedidactique/didactique20.jpg" style="z-index:-1"/>
+			<img id="img15" src="Images/projet_nuagedidactique/didactique21.jpg" style="z-index:-1"/>
+			<img id="img12" src="Images/projet_nuagedidactique/didactique22.jpg" style="z-index:-1"/>-->
+			<img id="img13" src="Images/projet_nuagedidactique/didactique23.jpg" style="z-index:-1"/>
+			<img id="img14" src="Images/projet_nuagedidactique/didactique24.jpg" style="z-index:-1"/>
+			<img id="img15" src="Images/projet_nuagedidactique/didactique25.jpg" style="z-index:-1"/>
+			<img id="img14" src="Images/projet_nuagedidactique/didactique26.jpg" style="z-index:-1"/>
+			<img id="img15" src="Images/projet_nuagedidactique/didactique27.jpg" style="z-index:-1"/>
+			
+			
+			
    		 </div>
+
+<script>
+   		 	var tmp = 1;
+			function next() {
+					tmp++;
+					if(tmp == 21)
+						tmp = 1;
+	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
+			}
+   		 </script>
 
 
 

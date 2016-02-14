@@ -31,29 +31,45 @@
 
 	
 		<div id="description">
-<p>Affiche
+<p>Édition
 </br></br>
-Exposition du 14/01 au 14/02 2015</br>
-au BBB Centre d'art Toulouse
-</br>
-Collective Collection regroupe différentes œuvres hétéroclites collectées et mises en espace par l’artiste Laurent Fiévet. L’enjeu de ce projet était de produire un objet graphique propre à cette exposition, à la suite d’une immersion totale dans l’espace d’exposition. L’objet résultant de cette expérience sensorielle donne lieu à une affiche proposant un compte rendu global de Collective Collection, selon un point de vue personnel.
-L’exposition, composée en majeure partie d’œuvres vidéo constituait une ambiance sonore générale très étrange. Tous les sons se brouillaient, conduisant finalement à une piste sonore composite. C’est ce premier constat
-qui a attiré mon attention. Comment autant d’œuvres différentes de sens et d’aspect ;
-objets physique, vidéos immatérielles, corps organique ou vide pouvaient avoir un lien, au delà de l’espace dans lequel elles se trouvaient ? Chaque œuvre une à une, devenait actrice d’une nouvelle œuvre commune, à base
-de sons.
-C’est tout naturellement que j’ai imaginé ce même processus pour la conception de mon affiche. J’ai dans un premier temps collecté un ensemble d’images, en me rapprochant au maximum de la matérialité
-de ces pièces (reflets, pixels RVB des projections vidéos...), pour ensuite composer une nouvelle image à base de fragments – cette fois – visuels. 
-</br>
-D’une certaine manière, cette méta-image composite et autonome devient
-la synthèse de cette exposition et incarne l’identité même de Collective Collection – par la collection d’œuvres collectées composant une œuvre collective.
-J’ai donc souhaité que cette image d’images existe de manière autonome, qu’elle soit le témoin de cette exposition tout en mettant en place une deuxième version, cette fois-ci à but informatif.
-Le lettrage manuel de la seconde version textuelle renforce le caractère subjectif du projet. L’assemblage des ces œuvres dans l’exposition relève d’un choix personnel de Laurent Fiévet, à travers cette sélection il s’implique personnellement. J’ai également choisi de traiter ces informations de la même manière que mon fond, avec une matière, ici le pixel, faisant référence aux pixels vidéo qui ressortent dans mon image. Afin de renforcer cette impression de « tout » j’avais envie d’un ensemble homogène dans lequel cohabite texte et image.
+Nuage poétique</br>
+
+
+
 </p>
 		</div>
 
-		<div id="images">
-			<img src="Images/bbb_afficheimage.jpg"/>
+		<div id="images" onclick="next()">
+			<img id="img1" src="Images/projet_nuagepoetique/poetique1.jpg" style="z-index:1"/>
+			<img id="img2" src="Images/projet_nuagepoetique/poetique2.jpg" style="z-index:-1"/>
+			<img id="img3" src="Images/projet_nuagepoetique/poetique3.jpg" style="z-index:-1"/>
+			<img id="img4" src="Images/projet_nuagepoetique/poetique4.jpg" style="z-index:-1"/>
+			<img id="img5" src="Images/projet_nuagepoetique/poetique5.jpg" style="z-index:-1"/>
+			<img id="img6" src="Images/projet_nuagepoetique/poetique6.jpg" style="z-index:-1"/>
+			<img id="img7" src="Images/projet_nuagepoetique/poetique7.jpg" style="z-index:-1"/>
+			<img id="img8" src="Images/projet_nuagepoetique/poetique8.jpg" style="z-index:-1"/>
+			<img id="img9" src="Images/projet_nuagepoetique/poetique9.jpg" style="z-index:-1"/>
+			<img id="img10" src="Images/projet_nuagepoetique/poetique10.jpg" style="z-index:-1"/>
+			<img id="img11" src="Images/projet_nuagepoetique/poetique11.jpg" style="z-index:-1"/>
+			<img id="img12" src="Images/projet_nuagepoetique/poetique12.jpg" style="z-index:-1"/>
+			<img id="img13" src="Images/projet_nuagepoetique/poetique13.jpg" style="z-index:-1"/>
+			<img id="img14" src="Images/projet_nuagepoetique/poetique14.jpg" style="z-index:-1"/>
+			<img id="img15" src="Images/projet_nuagepoetique/poetique15.jpg" style="z-index:-1"/>
+			
+			
+			
    		 </div>
+
+<script>
+   		 	var tmp = 1;
+			function next() {
+					tmp++;
+					if(tmp == 16)
+						tmp = 1;
+	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
+			}
+   		 </script>
 
 
 

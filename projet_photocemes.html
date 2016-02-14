@@ -43,9 +43,37 @@ CÉMES</br>
 	</p>
 		</div>
 
-		<div id="images">
-			<img src="Images/IMG_1451.JPG"/>
+		<div id="images" onclick="next()">
+			<img id="img1" src="Images/projet_photocemes/cemes1.jpg" style="z-index:1"/>
+			<img id="img2" src="Images/projet_photocemes/cemes2.jpg" style="z-index:-1"/>
+			<img id="img3" src="Images/projet_photocemes/cemes3.jpg" style="z-index:-1"/>
+			<img id="img4" src="Images/projet_photocemes/cemes4.jpg" style="z-index:-1"/>
+			<img id="img5" src="Images/projet_photocemes/cemes5.jpg" style="z-index:-1"/>
+			<img id="img6" src="Images/projet_photocemes/cemes6.jpg" style="z-index:-1"/>
+			<img id="img7" src="Images/projet_photocemes/cemes7.jpg" style="z-index:-1"/>
+			<img id="img8" src="Images/projet_photocemes/cemes8.jpg" style="z-index:-1"/>
+			<img id="img9" src="Images/projet_photocemes/cemes9.jpg" style="z-index:-1"/>
+			<img id="img10" src="Images/projet_photocemes/cemes10.jpg" style="z-index:-1"/>
+			<img id="img11" src="Images/projet_photocemes/cemes11.jpg" style="z-index:-1"/>
+			<img id="img12" src="Images/projet_photocemes/cemes12.jpg" style="z-index:-1"/>
+			<img id="img13" src="Images/projet_photocemes/cemes13.jpg" style="z-index:-1"/>
+			<img id="img14" src="Images/projet_photocemes/cemes14.jpg" style="z-index:-1"/>
+			<img id="img14" src="Images/projet_photocemes/cemes15.jpg" style="z-index:-1"/>
+			
+			
+			
+			
    		 </div>
+
+<script>
+   		 	var tmp = 1;
+			function next() {
+					tmp++;
+					if(tmp == 16)
+						tmp = 1;
+	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
+			}
+   		 </script>
 
 
 
