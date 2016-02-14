@@ -153,11 +153,39 @@ font-size: 13px;
 }
 
 #images {
+
 margin-top: 60px;
-margin-left: 250px;
+margin-left: 400px;
 
 }
 
+#img1{
+position: absolute;
+	
+}
 
+#img2{
+position: absolute;
+	
+}
 
+#img3{
+position: absolute;
+	
+}
+
+#img4{
+position: absolute;
+	
+}
+
+#img5{
+position: absolute;
+	
+}
+
+#img6{
+position: absolute;
+	
+}
 
