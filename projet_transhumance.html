@@ -33,21 +33,32 @@
 		<div id="description">
 <p>Identité
 </br></br>
-Les Folies de Chambord
+Festival Transhumance
 </br>
-
-</br>
-
-
-
-
+Festival de musique éléctronique situé sur les remparts de la cité Vauban de Briançon.
 
 	</p>
-		</div>
 
-		<div id="images">
-			<img src="Images/chambord_affiche.jpg"/>
+		<div id="images" onclick="next()">
+			<img id="img1" src="Images/projet_transhumance/transhumance1.jpg" style="z-index:1"/>
+			<img id="img2" src="Images/projet_transhumance/transhumance2.jpg" style="z-index:-1"/>
+			<img id="img3" src="Images/projet_transhumance/transhumance3.jpg" style="z-index:-1"/>
+			<img id="img4" src="Images/projet_transhumance/transhumance4.jpg" style="z-index:-1"/>
+			<img id="img5" src="Images/projet_transhumance/transhumance5.jpg" style="z-index:-1"/>
+			<img id="img6" src="Images/projet_transhumance/transhumance6.jpg" style="z-index:-1"/>
+			<img id="img7" src="Images/projet_transhumance/transhumance7.jpg" style="z-index:-1"/>
+			
    		 </div>
+
+<script>
+   		 	var tmp = 1;
+			function next() {
+					tmp++;
+					if(tmp == 8)
+						tmp = 1;
+	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
+			}
+   		 </script>
 
 
 
