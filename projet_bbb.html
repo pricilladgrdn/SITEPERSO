@@ -53,6 +53,7 @@ Le lettrage manuel de la seconde version textuelle renforce le caractère subjec
 
 		<div id="images" onclick="next()">
 			<img id="img1" src="Images/projet_bbb/bbb_affichetexte.jpg" style="z-index:1"/>
+			<img id="img1" src="Images/projet_bbb/bbb_afficheimage.jpg" style="z-index:-1"/>
 			<img id="img2" src="Images/projet_bbb/bbb_detail1.jpg" style="z-index:-1"/>
 			<img id="img3" src="Images/projet_bbb/bbb_detail3.jpg" style="z-index:-1"/>
 			<img id="img4" src="Images/projet_bbb/bbb_detail4.jpg" style="z-index:-1"/>
@@ -64,7 +65,7 @@ Le lettrage manuel de la seconde version textuelle renforce le caractère subjec
    		 	var tmp = 1;
 			function next() {
 					tmp++;
-					if(tmp == 6)
+					if(tmp == 7)
 						tmp = 1;
 	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
 			}

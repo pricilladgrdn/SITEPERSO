@@ -159,32 +159,7 @@ margin-left: 400px;
 
 }
 
-#img1{
-position: absolute;
-	
-}
-
-#img2{
-position: absolute;
-	
-}
-
-#img3{
-position: absolute;
-	
-}
-
-#img4{
-position: absolute;
-	
-}
-
-#img5{
-position: absolute;
-	
-}
-
-#img6{
+#img1, #img2, #img3, #img4, #img5, #img6, #img7, #img8, #img9, #img10, #img11, #img12, #img13, #img14, #img15, #img16 {
 position: absolute;
 	
 }
