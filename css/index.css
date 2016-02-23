@@ -46,13 +46,16 @@ url('../font/spina-regular-regular-webfont.svg#spina-regularregular') format('sv
 		#archive a, #archive a:link, #archive a:visited, 
 		#contact a, #contact a:link, #contact a:visited { 
 			text-decoration: none;
-			font-family: 'spina-regularregular';
+					font-family: 'spina-regularregular';
+
 			font-size: 22px;
 			color:#551CFF;
+			
 			}
 
 		#prenom a:hover, #archive a:hover, #contact a:hover { 
 			color:#1AFBB8;
+			
 			}
 
 

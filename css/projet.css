@@ -166,3 +166,16 @@ position: absolute;
 	
 }
 
+a, a:hover , a:visited  {
+
+	text-decoration:none;	
+}
+
+a:hover {
+color:#1AFBB8;
+	text-decoration:none;	
+
+
+
+}
+
