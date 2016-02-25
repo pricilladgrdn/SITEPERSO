@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
     font-family: 'spina-regularregular';
     src: url('../font/spina-regular-regular-webfont.eot');
     src: url('../font/spina-regular-regular-webfont.eot?#iefix') format('embedded-opentype'),
@@ -8,13 +8,13 @@ url('../font/spina-regular-regular-webfont.ttf') format('truetype'),
 url('../font/spina-regular-regular-webfont.svg#spina-regularregular') format('svg');
     font-weight: normal;
     font-style: normal;
-}
+}*/
 	
 	.boite{
 		/*border: solid 2px #0F0;
 		padding: 10px;*/
-		font-family: 'spina-regularregular';
-		font-size: 22px;
+		font-family: 'Karla', sans-serif;
+		
 		
 	}
 
@@ -22,40 +22,61 @@ url('../font/spina-regular-regular-webfont.svg#spina-regularregular') format('sv
 /* M E N U  P A G E  D ' A C C U E I L */
 
 	#prenom{
-		position: fixed;
-		top: 40px;
-		left: 5%;
-	}
+		margin-left:1%;
+		margin-top:1%;
+		font-size: 16px;
 
+		/*position: fixed;
+		top: 40px;
+		left: 5%;*/
+	}
+	#cv{
+		text-align: right;
+		margin-right: 1%;
+		margin-top:47%;
+		font-size: 13px;
+		line-height: 17px;
+	}
 
 	#archive{
-		position: fixed;
+		text-align: right;
+		margin-right: 1%;
+		margin-top:0%;
+		font-size: 13px;
+		line-height: 17px;
+		/*position: fixed;
 		top: 40px;
-		left: 47%;
+		left: 47%;*/
 	}
 	#contact{
-		position: fixed;
+		text-align: right;
+		margin-right: 1%;
+		margin-top:0%;
+		font-size: 13px;
+		line-height: 17px;
+		/*position: fixed;
 		top: 40px;
-		left: 90%;
+		left: 90%;*/
 	}
+	
+
 
 /* L I E N S  M E N U */
 /* L I E N S  M E N U */
 
 		#prenom a, #prenom a:link, #prenom a:visited,
+		#cv a, #cv a:link, #cv a:visited,
 		#archive a, #archive a:link, #archive a:visited, 
 		#contact a, #contact a:link, #contact a:visited { 
 			text-decoration: none;
-					font-family: 'spina-regularregular';
-
-			font-size: 22px;
-			color:#551CFF;
-			
+			font-family: 'Karla', sans-serif;
+			/*color:#551CFF;*/
+			color:black;
 			}
 
-		#prenom a:hover, #archive a:hover, #contact a:hover { 
-			color:#1AFBB8;
-			
+		#prenom a:hover, #archive a:hover, #contact a:hover, #cv a:hover { 
+			/*color:#1AFBB8;*/
+			color:white;
 			}
 
 
@@ -73,24 +94,23 @@ url('../font/spina-regular-regular-webfont.svg#spina-regularregular') format('sv
 		display:block;
 	}
 
+	
+
 	li a, li a:link, li a:visited {
 		position:absolute;
 		top:0;
 		right:0;
 		text-decoration:none;
-		font-family: 'spina-regularregular';
+		font-family: 'Karla', sans-serif;
 		font-size: 19px;
 		text-align: center;
-		color:#1AFBB8;
+		
 		width: 22px;
 		height: 22px;
 		color:white;
-		background-color: #551CFF;
+		background-color: black;
 		display: none;
 
-		/*{ position:absolute; bottom:0; left:0; display:none; width:20px; height:20px;
-		 text-align:center; line-height:18px; font-size:18px; background:#fe4a5d; 
-		 color:#fff; text-decoration:none; } */
 	}
 
 	li:hover a {
@@ -101,6 +121,9 @@ url('../font/spina-regular-regular-webfont.svg#spina-regularregular') format('sv
 		color:white;
 		background-color: #1AFBB8;
 	}
+
+	/*#1AFBB8
+	#551CFF*/
 
 	li {
 		height:auto;
