@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="script/jquery.chipmunky-gallery.js"></script>
 	<script type="text/javascript" src="script/global.js"></script>
 
-
+<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
@@ -21,47 +21,46 @@
 </div>
 
 <div id="archive" class="boite">
-<a href="#">  </a>
+<a href="#"></a>
 </div>
 
 <div id="contact" class="boite">
-<a href="#">  </a>
+<a href="#"></a>
 </div>
 
 
 	
 		<div id="description">
-<p>Édition
-</br></br>
-Papillon(s)
+<p><div id="italic">Édition</div>
 </br>
-Mise en page du texte de Vanina Pinter.
+« Papillon(s)</br>
+Du brouillage des métaphores.</br>
+De l'éphémère et du design graphique.</br>
+De l'affiche "Un Papillon" </br>de Fanette Mellier ».</br>
+
 </br>
-Des photos, des photos !
-
-
-
-
+Mise en page de l'<a href="http://www.t-o-m-b-o-l-o.eu/meta/papillons/" target="blank">essai</a> de Vanina Pinter.
+</br>
 	</p>
+
 		</div>
+
+
 	<div id="images" onclick="next()">
-			<!--<img id="img1" src="Images/projet_horsdoeuvre/hors1.jpg" style="z-index:1"/>
-			<img id="img2" src="Images/projet_horsdoeuvre/hors2.jpg" style="z-index:-1"/>
-			<img id="img3" src="Images/projet_horsdoeuvre/hors3.jpg" style="z-index:-1"/>
-			<img id="img4" src="Images/projet_horsdoeuvre/hors4.jpg" style="z-index:-1"/>
-			<img id="img5" src="Images/projet_horsdoeuvre/hors5.jpg" style="z-index:-1"/>
-			<img id="img6" src="Images/projet_horsdoeuvre/hors6.jpg" style="z-index:-1"/>
-			<img id="img7" src="Images/projet_horsdoeuvre/hors7.jpg" style="z-index:-1"/>
-			<img id="img8" src="Images/projet_horsdoeuvre/hors8.jpg" style="z-index:-1"/>
-			<img id="img9" src="Images/projet_horsdoeuvre/hors9.jpg" style="z-index:-1"/>
-			<img id="img10" src="Images/projet_horsdoeuvre/hors10.jpg" style="z-index:-1"/>
-			<img id="img11" src="Images/projet_horsdoeuvre/hors11.jpg" style="z-index:-1"/>
-			<img id="img12" src="Images/projet_horsdoeuvre/hors12.jpg" style="z-index:-1"/>
-			<img id="img13" src="Images/projet_horsdoeuvre/hors13.jpg" style="z-index:-1"/>
-			<img id="img14" src="Images/projet_horsdoeuvre/hors14.jpg" style="z-index:-1"/>-->
-			
-			
-			
+			<img id="img1" src="Images/projet_papillon/pap1.jpg" style="z-index:1"/>
+			<img id="img2" src="Images/projet_papillon/pap2-2.jpg" style="z-index:-1"/>
+			<img id="img2" src="Images/projet_papillon/pap2.jpg" style="z-index:-1"/>
+			<img id="img3" src="Images/projet_papillon/pap3.jpg" style="z-index:-1"/>
+			<img id="img4" src="Images/projet_papillon/pap4.jpg" style="z-index:-1"/>
+			<img id="img5" src="Images/projet_papillon/pap5.jpg" style="z-index:-1"/>
+			<img id="img6" src="Images/projet_papillon/pap6.jpg" style="z-index:-1"/>
+			<img id="img7" src="Images/projet_papillon/pap7.jpg" style="z-index:-1"/>
+			<img id="img8" src="Images/projet_papillon/pap8.jpg" style="z-index:-1"/>
+			<img id="img9" src="Images/projet_papillon/pap9.jpg" style="z-index:-1"/>
+			<img id="img10" src="Images/projet_papillon/pap10.jpg" style="z-index:-1"/>
+			<img id="img11" src="Images/projet_papillon/pap11.jpg" style="z-index:-1"/>
+			<img id="img12" src="Images/projet_papillon/pap12.jpg" style="z-index:-1"/>
+			<img id="img13" src="Images/projet_papillon/pap13.jpg" style="z-index:-1"/>
 			
    		 </div>
 
@@ -69,7 +68,7 @@ Des photos, des photos !
    		 	var tmp = 1;
 			function next() {
 					tmp++;
-					if(tmp == 15)
+					if(tmp == 14)
 						tmp = 1;
 	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
 			}
