@@ -142,14 +142,15 @@
 					$(this).css('z-index', 100).siblings().each(function() {
 						style = window.getComputedStyle($(this)[0]);
 						zindex = style.getPropertyValue('z-index');
-						$(this).css('z-index', zindex - 1);
+						if(zindex > 0)
+							$(this).css('z-index', zindex - 1);
 					});
 				}).draggable();
 
 				$('ul.images li').each(function() {
 					$(this).css('top', randomize(100, 300))
 						   .css('left', randomize(100, 800))
-						   .css('z-index', randomize(1, 100));
+						   .css('z-index', randomize(50, 100));
 				});
 			});
 
