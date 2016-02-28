@@ -10,6 +10,7 @@
 	<script type="text/javascript" src="script/jquery.chipmunky-gallery.js"></script>
 	<script type="text/javascript" src="script/global.js"></script>
 
+<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
 
 
 </head>
@@ -31,9 +32,9 @@
 
 	
 		<div id="description">
-<p>Techniques mixtes
-</br></br>
-Bientôt ici une description et plein de photos !
+<p><div id="italic">Techniques mixtes</div>
+</br>
+Expérimentations à base de motifs collectés et dessinés.
 
 
 
@@ -43,13 +44,16 @@ Bientôt ici une description et plein de photos !
 		</div>
 
 		<div id="images" onclick="next()">
-			<!--<img id="img1" src="Images/projet_andre/akaffiche.jpg" style="z-index:1"/>
-			<img id="img2" src="Images/projet_andre/ak1.jpg" style="z-index:-1"/>
-			<img id="img3" src="Images/projet_andre/ak2.jpg" style="z-index:-1"/>
-			<img id="img4" src="Images/projet_andre/ak3.jpg" style="z-index:-1"/>
-			<img id="img5" src="Images/projet_andre/ak4.jpg" style="z-index:-1"/>
-			<img id="img6" src="Images/projet_andre/ak5.jpg" style="z-index:-1"/>
-			<img id="img7" src="Images/projet_andre/ak6.jpg" style="z-index:-1"/>-->
+			<img id="img1" src="Images/projet_motif/motifscan1.jpg" style="z-index:1"/>
+			<img id="img2" src="Images/projet_motif/motifscan2.jpg" style="z-index:-1"/>
+			<img id="img3" src="Images/projet_motif/motifscan3.jpg" style="z-index:-1"/>
+			<img id="img4" src="Images/projet_motif/motifscan4.jpg" style="z-index:-1"/>
+			<img id="img5" src="Images/projet_motif/motiftable.jpg" style="z-index:-1"/>
+			<img id="img6" src="Images/projet_motif/motifphoto1.jpg" style="z-index:-1"/>
+			<img id="img7" src="Images/projet_motif/motifphoto2.jpg" style="z-index:-1"/>
+			<img id="img8" src="Images/projet_motif/motifphoto3.jpg" style="z-index:-1"/>
+			
+		
 			
    		 </div>
 
@@ -57,7 +61,7 @@ Bientôt ici une description et plein de photos !
    		 	var tmp = 1;
 			function next() {
 					tmp++;
-					if(tmp == 8)
+					if(tmp == 9)
 						tmp = 1;
 	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
 			}
