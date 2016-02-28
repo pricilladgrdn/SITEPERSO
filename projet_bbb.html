@@ -33,12 +33,13 @@
 	
 		<div id="description">
 <p><div id="italic">Affiche</div>
-</br></br>
+</br>
 Exposition du 14/01 au 14/02 2015</br>
 au BBB Centre d'art Toulouse
 </br>
-Collective Collection regroupe différentes œuvres hétéroclites collectées et mises en espace par l’artiste Laurent Fiévet. L’enjeu de ce projet était de produire un objet graphique propre à cette exposition, à la suite d’une immersion totale dans l’espace d’exposition. L’objet résultant de cette expérience sensorielle donne lieu à une affiche proposant un compte rendu global de Collective Collection, selon un point de vue personnel. <!--
-L’exposition, composée en majeure partie d’œuvres vidéo constituait une ambiance sonore générale très étrange. Tous les sons se brouillaient, conduisant finalement à une piste sonore composite. C’est ce premier constat
+Collective Collection regroupe différentes œuvres hétéroclites collectées et mises en espace par l’artiste Laurent Fiévet. L’enjeu de ce projet était de produire un objet graphique propre à cette exposition, à la suite d’une immersion totale dans l’espace d’exposition. L’objet résultant de cette expérience sensorielle donne lieu à une affiche proposant un compte rendu global de Collective Collection, selon un point de vue personnel. 
+
+<!--L’exposition, composée en majeure partie d’œuvres vidéo constituait une ambiance sonore générale très étrange. Tous les sons se brouillaient, conduisant finalement à une piste sonore composite. C’est ce premier constat
 qui a attiré mon attention. Comment autant d’œuvres différentes de sens et d’aspect ;
 objets physique, vidéos immatérielles, corps organique ou vide pouvaient avoir un lien, au delà de l’espace dans lequel elles se trouvaient ? Chaque œuvre une à une, devenait actrice d’une nouvelle œuvre commune, à base
 de sons.
@@ -53,12 +54,11 @@ Le lettrage manuel de la seconde version textuelle renforce le caractère subjec
 		</div>
 
 		<div id="images" onclick="next()">
-			<img id="img1" src="Images/projet_bbb/bbb_affichetexte.jpg" style="z-index:1"/>
-			<img id="img1" src="Images/projet_bbb/bbb_afficheimage.jpg" style="z-index:-1"/>
+			<img id="img1" src="Images/projet_bbb/bbb_affiche.jpg" style="z-index:1"/>
 			<img id="img2" src="Images/projet_bbb/bbb_detail1.jpg" style="z-index:-1"/>
-			<img id="img3" src="Images/projet_bbb/bbb_detail3.jpg" style="z-index:-1"/>
-			<img id="img4" src="Images/projet_bbb/bbb_detail4.jpg" style="z-index:-1"/>
-			<img id="img5" src="Images/projet_bbb/bbb_detail5.jpg" style="z-index:-1"/>
+			<img id="img3" src="Images/projet_bbb/bbb_detail2.jpg" style="z-index:-1"/>
+			<img id="img4" src="Images/projet_bbb/bbb_detail3.jpg" style="z-index:-1"/>
+			<img id="img5" src="Images/projet_bbb/bbb_detail4.jpg" style="z-index:-1"/>
    		 </div>
 
 
@@ -66,7 +66,7 @@ Le lettrage manuel de la seconde version textuelle renforce le caractère subjec
    		 	var tmp = 1;
 			function next() {
 					tmp++;
-					if(tmp == 7)
+					if(tmp == 6)
 						tmp = 1;
 	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
 			}
