@@ -10,11 +10,16 @@ url('../font/spina-regular-regular-webfont.svg#spina-regularregular') format('sv
     font-style: normal;
 }*/
 	
+
+	
+
 	.boite{
 		/*border: solid 2px #0F0;
 		padding: 10px;*/
 		font-family: 'Karla', sans-serif;
 		z-index: -1;
+		
+
 		
 		
 	}
@@ -32,27 +37,31 @@ url('../font/spina-regular-regular-webfont.svg#spina-regularregular') format('sv
 		left: 5%;*/
 	}
 	#cv{
+		
 		text-align: right;
 		margin-right: 1%;
-		margin-top:47%;
+		margin-top:46%;
+		margin-bottom:0%;
 		font-size: 13px;
 		line-height: 17px;
 	}
 
-	#archive{
+	#tel{
 		text-align: right;
 		margin-right: 1%;
 		margin-top:0%;
+		margin-bottom:0%;
 		font-size: 13px;
 		line-height: 17px;
 		/*position: fixed;
 		top: 40px;
 		left: 47%;*/
 	}
-	#contact{
+	#mail{
 		text-align: right;
 		margin-right: 1%;
 		margin-top:0%;
+		margin-bottom:2%;
 		font-size: 13px;
 		line-height: 17px;
 		/*position: fixed;
@@ -67,15 +76,15 @@ url('../font/spina-regular-regular-webfont.svg#spina-regularregular') format('sv
 
 		#prenom a, #prenom a:link, #prenom a:visited,
 		#cv a, #cv a:link, #cv a:visited,
-		#archive a, #archive a:link, #archive a:visited, 
-		#contact a, #contact a:link, #contact a:visited { 
+		#tel a, #tel a:link, #tel a:visited, 
+		#mail a, #mail  a:link, #mail  a:visited { 
 			text-decoration: none;
 			font-family: 'Karla', sans-serif;
 			/*color:#551CFF;*/
 			color:black;
 			}
 
-		#prenom a:hover, #archive a:hover, #contact a:hover, #cv a:hover { 
+		#prenom a:hover, #tel a:hover, #mail a:hover, #cv a:hover { 
 			/*color:#1AFBB8;*/
 			color:white;
 			}
