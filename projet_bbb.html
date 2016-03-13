@@ -57,7 +57,7 @@ au BBB Centre d'art, Toulouse
    		 </div>
 
 
-   		 <script>
+<script>
    		 	var tmp = 1;
 			function next() {
 					tmp++;
@@ -65,7 +65,16 @@ au BBB Centre d'art, Toulouse
 						tmp = 1;
 	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
 			}
-   		 </script>
+
+
+			$(document).keydown(function(e){
+   				switch (e.which){
+   					case 37: window.location.href = "projet_standjpo.html"; break; //lien du projet d'avant
+     				case 39: window.location.href = "projet_germinal.html"; break; // lien du projet d'après
+   				}
+   			});
+
+</script>
 
 </body>
 </html>

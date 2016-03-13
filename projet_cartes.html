@@ -66,6 +66,13 @@ Des détails subversifs se sont glissés dans la symétrie, créant une narratio
 						tmp = 1;
 	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
 			}
+
+			$(document).keydown(function(e){
+   				switch (e.which){
+   					case 37: window.location.href = "projet_nuagedidactique.html"; break; //lien du projet d'avant
+     				case 39: window.location.href = "projet_secret.html"; break; // lien du projet d'après
+   				}
+   			});
    		 </script>
 
 

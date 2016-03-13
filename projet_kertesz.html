@@ -34,7 +34,7 @@
 André Kertész</br></br>
 Exposition monographique </br>du photographe André Kertész</br> au Jeu de Paume, du 28/09/2010
 </br>au 06/02/2011.</br></br>
-L'identité de cette exposition est basée sur un monogramme déformé et un caracère de titrage dessiné à la main.
+L'identité de cette exposition est basée sur un monogramme déformé et un caractère de titrage dessiné à la main.
 </br></br>
 Affiche 70 x 100 cm</br>
 Dépliant A3</br>
@@ -68,6 +68,13 @@ Dépliant A3</br>
 						tmp = 1;
 	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
 			}
+
+						$(document).keydown(function(e){
+   				switch (e.which){
+   					case 37: window.location.href = "projet_chambord.html"; break; //lien du projet d'avant
+     				case 39: window.location.href = "projet_lettrage.html"; break; // lien du projet d'après
+   				}
+   			});
    		 </script>
 
 

@@ -106,6 +106,13 @@ Papier layout 75 g</br>
 						tmp = 1;
 	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
 			}
+
+			$(document).keydown(function(e){
+   				switch (e.which){
+   					case 37: window.location.href = "projet_bbb.html"; break; //lien du projet d'avant
+     				case 39: window.location.href = "projet_data.html"; break; // lien du projet d'après
+   				}
+   			});
    		 </script>
 
 

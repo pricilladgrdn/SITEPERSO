@@ -45,7 +45,21 @@ Production évolutive du 6 au 7 mars 2015.
 			<img src="Images/projet_stand/stand_2.gif"/>
    		 </div>
 
-
+<script>
+   		 	var tmp = 1;
+			function next() {
+					tmp++;
+					if(tmp == 1)
+						tmp = 1;
+	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
+			}
+				$(document).keydown(function(e){
+   				switch (e.which){
+   					case 37: window.location.href = "projet_motif.html"; break; //lien du projet d'avant
+     				case 39: window.location.href = "projet_bbb.html"; break; // lien du projet d'après
+   				}
+   			});
+   		 </script>
 
 
 

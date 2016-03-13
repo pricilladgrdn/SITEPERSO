@@ -58,6 +58,13 @@ Elle est issue d'un lettrage à la brosse plate.
 						tmp = 1;
 	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
 			}
+
+					$(document).keydown(function(e){
+   				switch (e.which){
+   					case 37: window.location.href = "projet_lettrage.html"; break; //lien du projet d'avant
+     				case 39: window.location.href = "projet_photocemes.html"; break; // lien du projet d'après
+   				}
+   			});
    		 </script>
 
 

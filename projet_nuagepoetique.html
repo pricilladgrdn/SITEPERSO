@@ -70,7 +70,14 @@ Concevoir une édition à visée poétique </br>en se référant au « Livre de 
 						tmp = 1;
 	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
 			}
-   		 </script>
+
+			$(document).keydown(function(e){
+   				switch (e.which){
+   					case 37: window.location.href = "projet_surkrut.html"; break; //lien du projet d'avant
+     				case 39: window.location.href = "projet_nuagedidactique.html"; break; // lien du projet d'après
+   				}
+   			});
+  </script>
 
 
 

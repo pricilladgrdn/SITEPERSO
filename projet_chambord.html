@@ -32,8 +32,8 @@
 <p><div id="italic">Identité</div>
 </br>
 Les Folies de Chambord</br></br>
-Il s'agit d'un festival d'art contemporain, proposant des spectacles de danse, théâtre et performance dans l'enceinte historique du château de Chambord. </br>
-La programmation reste cachée aux spectateurs jusqu'au moment </br>où les acteurs entrent en scène. </br>Afin de conserver l'effet de surprise, </br>un carton accompagnant ces représentation est distridué à la fin </br>de chacune d'elle.</br></br>
+Il s'agit d'un festival d'art contemporain, proposant des spectacles de danse, </br>du théâtre et des performances dans l'enceinte historique du château de Chambord. </br>
+La programmation reste cachée aux spectateurs jusqu'au moment </br>où les acteurs entrent en scène. </br>Afin de conserver l'effet de surprise, </br>un carton accompagnant ces représentations est distribué à la fin </br>de chacune d'elle.</br></br>
 Carton A5</br>
 Billets 150 x 60 mm</br>
 
@@ -63,6 +63,13 @@ Billets 150 x 60 mm</br>
 						tmp = 1;
 	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
 			}
+
+						$(document).keydown(function(e){
+   				switch (e.which){
+   					case 37: window.location.href = "projet_interdit.html"; break; //lien du projet d'avant
+     				case 39: window.location.href = "projet_kertesz.html"; break; // lien du projet d'après
+   				}
+   			});
    		 </script>
 
 
