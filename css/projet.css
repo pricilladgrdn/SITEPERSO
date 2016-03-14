@@ -54,7 +54,8 @@ url('../font/spina-regular-regular-webfont.svg#spina-regularregular') format('sv
 			}
 
 		#prenom a:hover, #archive a:hover, #contact a:hover { 
-			color:#1AFBB8;
+			/*color:#1AFBB8;*/
+			color:white;
 			}
 
 
