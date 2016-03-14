@@ -1,90 +1,45 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>&#10697; Les Folies de Chambord</title>
-  <link rel="stylesheet" href="css/projet.css">
-
+	<meta charset="utf-8">
+	<title>&#10697; Les Folies de Chambord</title>
+	<link rel="stylesheet" href="css/projet.css">
 	<script type="text/javascript" src="script/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="script/jquery-ui-min.js"></script>
-	<script type="text/javascript" src="script/jquery.chipmunky-gallery.js"></script>
-	<script type="text/javascript" src="script/global.js"></script>
-
-<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
-
-
+	<script type="text/javascript" src="script/projet.js"></script>
+	<script type="text/javascript" src="script/ga.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
- 
-<div id="prenom" class="boite">
-<a href="http://www.pricilladegardin.xyz"> &#8598; </a>
-</div>
-
-
-<div id="contact" class="boite">
-<a href="projet_kertesz.html"> &#x2192; </a>
-</div>
-
-
-	
-		<div id="description">
-<p><div id="italic">Identité</div>
-</br>
-Les Folies de Chambord</br></br>
-Il s'agit d'un festival d'art contemporain, proposant des spectacles de danse, </br>du théâtre et des performances dans l'enceinte historique du château de Chambord. </br>
-La programmation reste cachée aux spectateurs jusqu'au moment </br>où les acteurs entrent en scène. </br>Afin de conserver l'effet de surprise, </br>un carton accompagnant ces représentations est distribué à la fin </br>de chacune d'elle.</br></br>
-Carton A5</br>
-Billets 150 x 60 mm</br>
-
-2013
-
-
-	</p>
-		</div>
-
-			<div id="images" onclick="next()">
-			<img id="img1" src="Images/projet_chambord/chambord1.jpg" style="z-index:1"/>
-			<img id="img2" src="Images/projet_chambord/chambord2.jpg" style="z-index:-1"/>
-			<img id="img3" src="Images/projet_chambord/chambord3.jpg" style="z-index:-1"/>
-			<img id="img4" src="Images/projet_chambord/chambord4.jpg" style="z-index:-1"/>
-			<img id="img5" src="Images/projet_chambord/chambord5.jpg" style="z-index:-1"/>
-
-			
-			
-			
-   		 </div>
-
-<script>
-   		 	var tmp = 1;
-			function next() {
-					tmp++;
-					if(tmp == 6)
-						tmp = 1;
-	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
-			}
-
-						$(document).keydown(function(e){
-   				switch (e.which){
-   					case 37: window.location.href = "projet_interdit.html"; break; //lien du projet d'avant
-     				case 39: window.location.href = "projet_kertesz.html"; break; // lien du projet d'après
-   				}
-   			});
-   		 </script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-54337758-3', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-
-
+	<div id="prenom" class="boite">
+		<a href="http://www.pricilladegardin.xyz">&#8598;</a>
+	</div>
+	<div id="contact" class="boite">
+		<a href="projet_kertesz.html">&#x2192;</a>
+	</div>
+	<div id="description">
+		<p>	
+			<div id="italic">Identité</div></br>
+			Les Folies de Chambord</br></br>
+			Il s'agit d'un festival d'art contemporain, proposant des spectacles de danse,</br>
+			du théâtre et des performances dans l'enceinte historique du château de Chambord.</br>
+			La programmation reste cachée aux spectateurs jusqu'au moment</br>
+			où les acteurs entrent en scène.</br>
+			Afin de conserver l'effet de surprise,</br>
+			un carton accompagnant ces représentations est distribué à la fin</br>
+			de chacune d'elle.</br></br>
+			Carton A5</br>
+			Billets 150 x 60 mm</br>
+			2013
+		</p>
+	</div>
+		<div id="images" onclick="next(5)">
+		<img id="img1" src="Images/projet_chambord/chambord1.jpg" style="z-index:1"/>
+		<img id="img2" src="Images/projet_chambord/chambord2.jpg" style="z-index:-1"/>
+		<img id="img3" src="Images/projet_chambord/chambord3.jpg" style="z-index:-1"/>
+		<img id="img4" src="Images/projet_chambord/chambord4.jpg" style="z-index:-1"/>
+		<img id="img5" src="Images/projet_chambord/chambord5.jpg" style="z-index:-1"/>
+	</div>
 </body>
 </html>
 

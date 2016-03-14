@@ -1,92 +1,49 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>&#10697; Collective Collection</title>
-  <link rel="stylesheet" href="css/projet.css">
-
+	<meta charset="utf-8">
+	<title>&#10697; Collective Collection</title>
+	<link rel="stylesheet" href="css/projet.css">
 	<script type="text/javascript" src="script/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="script/jquery-ui-min.js"></script>
-	<script type="text/javascript" src="script/jquery.chipmunky-gallery.js"></script>
-	<script type="text/javascript" src="script/global.js"></script>
-
-<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
-
-
+	<script type="text/javascript" src="script/projet.js"></script>
+	<script type="text/javascript" src="script/ga.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
- 
-<div id="prenom" class="boite">
-<a href="http://www.pricilladegardin.xyz"> &#8598; </a>
-</div>
-
-
-
-<div id="contact" class="boite">
-<a href="projet_germinal.html"> &#x2192;</a>
-</div>
-
-
-	
-		<div id="description">
-<p><div id="italic">Affiche</div>
-</br>
-Collective Collection</br></br>
-
-Collective Collection regroupe différentes œuvres hétéroclites collectées et mises en espace par l’artiste Laurent Fiévet </br>au <a href="http://www.lebbb.org" target="blank">BBB</a> ; centre d'art Toulousain.</br></br>
-Constituée en majeure partie </br>d’œuvres vidéos, cette exposition </br>place le spectateur dans une ambiance particulière où tous les sons se mélangent. Cela créé une piste sonore unique et composite, influant sur l'observation des autres pièces.</br>
-C’est à partir de ce constat que j'ai conçu mon affiche.</br>
-Le visuel, une méta-image, est composé </br>à partir de fragments collectés avec </br>un téléphone portable.</br>
-Les informations de l'exposition </br>sont pensées dans un lettrage manuel pixelisé, qui renvoit à la texture des image initiales.
-</br></br>
-70 x 100 cm
-</br></br>
-Exposition du 14/01 au 14/02/2015</br>
-au BBB Centre d'art, Toulouse
-
-</p>
-		</div>
-
-		<div id="images" onclick="next()">
-			<img id="img1" src="Images/projet_bbb/bbb_affiche.jpg" style="z-index:1"/>
-			<img id="img2" src="Images/projet_bbb/bbb_detail1.jpg" style="z-index:-1"/>
-			<img id="img3" src="Images/projet_bbb/bbb_detail2.jpg" style="z-index:-1"/>
-			<img id="img4" src="Images/projet_bbb/bbb_detail3.jpg" style="z-index:-1"/>
-			<img id="img5" src="Images/projet_bbb/bbb_detail4.jpg" style="z-index:-1"/>
-   		 </div>
-
-
-<script>
-   		 	var tmp = 1;
-			function next() {
-					tmp++;
-					if(tmp == 6)
-						tmp = 1;
-	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
-			}
-
-
-			$(document).keydown(function(e){
-   				switch (e.which){
-   					case 37: window.location.href = "projet_standjpo.html"; break; //lien du projet d'avant
-     				case 39: window.location.href = "projet_germinal.html"; break; // lien du projet d'après
-   				}
-   			});
-
-</script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-54337758-3', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
+	<div id="prenom" class="boite">
+		<a href="http://www.pricilladegardin.xyz">&#8598;</a>
+	</div>
+	<div id="contact" class="boite">
+		<a href="projet_germinal.html">&#x2192;</a>
+	</div>
+	<div id="description">
+		<p>
+			<div id="italic">Affiche</div></br>
+			Collective Collection</br></br>
+			Collective Collection regroupe différentes œuvres hétéroclites collectées et mises en espace par l’artiste Laurent Fiévet</br>
+			au <a href="http://www.lebbb.org" target="blank">BBB</a> ; centre d'art Toulousain.</br></br>
+			Constituée en majeure partie</br>
+			d’œuvres vidéos, cette exposition</br>
+			place le spectateur dans une ambiance particulière où tous les sons se mélangent. Cela créé une piste sonore unique et composite, influant sur l'observation des autres pièces.</br>
+			C’est à partir de ce constat que j'ai conçu mon affiche.</br>
+			Le visuel, une méta-image, est composé</br>
+			à partir de fragments collectés avec</br>
+			un téléphone portable.</br>
+			Les informations de l'exposition</br>
+			sont pensées dans un lettrage manuel pixelisé, qui renvoit à la texture des image initiales.</br></br>
+			70 x 100 cm</br></br>
+			Exposition du 14/01 au 14/02/2015</br>
+			au BBB Centre d'art, Toulouse
+		</p>
+	</div>
+	<div id="images" onclick="next(5)">
+		<img id="img1" src="Images/projet_bbb/bbb_affiche.jpg" style="z-index:1"/>
+		<img id="img2" src="Images/projet_bbb/bbb_detail1.jpg" style="z-index:-1"/>
+		<img id="img3" src="Images/projet_bbb/bbb_detail2.jpg" style="z-index:-1"/>
+		<img id="img4" src="Images/projet_bbb/bbb_detail3.jpg" style="z-index:-1"/>
+		<img id="img5" src="Images/projet_bbb/bbb_detail4.jpg" style="z-index:-1"/>
+	</div>
 </body>
 </html>
 
