@@ -46,6 +46,14 @@
 		<img id="img13" src="Images/projet_horsdoeuvre/hors13.jpg" style="z-index:-1"/>
 		<img id="img14" src="Images/projet_horsdoeuvre/hors14.jpg" style="z-index:-1"/>
 	</div>
+	<script>
+		$(document).keydown(function(e){
+			switch (e.which){
+				case 37: window.location.href = "projet_transhumance.html"; break; //lien du projet d'avant
+				case 39: window.location.href = "projet_interdit.html"; break; // lien du projet d'après	
+			}
+		});
+	</script>
 </body>
 </html>
 

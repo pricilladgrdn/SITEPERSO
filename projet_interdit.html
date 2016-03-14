@@ -53,6 +53,14 @@
 		<img id="img19" src="Images/projet_interdit/interdit19.jpg" style="z-index:-1"/>
 		<img id="img20" src="Images/projet_interdit/interdit20.jpg" style="z-index:-1"/>
 	</div>
+	<script>
+		$(document).keydown(function(e){
+			switch (e.which){
+				case 37: window.location.href = "projet_horsdoeuvre.html"; break; //lien du projet d'avant
+				case 39: window.location.href = "projet_chambord.html"; break; // lien du projet d'après	
+			}
+		});
+	</script>
 </body>
 </html>
 

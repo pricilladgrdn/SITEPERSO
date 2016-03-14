@@ -33,6 +33,14 @@
 		<img id="img4" src="Images/projet_lettrage/lettre4.jpg" style="z-index:-1"/>
 		<img id="img5" src="Images/projet_lettrage/lettre5.jpg" style="z-index:-1"/>
 	</div>
+	<script>
+		$(document).keydown(function(e){
+			switch (e.which){
+				case 37: window.location.href = "projet_kertesz.html"; break; //lien du projet d'avant
+				case 39: window.location.href = "projet_sieste.html"; break; // lien du projet d'après	
+			}
+		});
+	</script>
 </body>
 </html>
 
