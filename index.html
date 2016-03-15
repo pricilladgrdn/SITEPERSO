@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="script/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="script/jquery-ui-min.js"></script>
 	<script type="text/javascript" src="script/ga.js"></script>
+	<script type="text/javascript" src="script/interact.min.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -128,8 +129,11 @@
 				}).draggable();
 
 				$('ul.images li').each(function() {
-					$(this).css('top', randomize(10, 50) + '%')
-						   .css('left', randomize(10, 80) + '%')
+					var w = Math.floor($(this).width() / $(window).width() * 100);
+					var h = Math.floor($(this).height() / $(window).height() * 100);
+					console.log(h + ' ' + w);
+					$(this).css('top', randomize(10, 90-h) + '%')
+						   .css('left', randomize(10, 90-w) + '%')
 						   .css('z-index', randomize(50, 100));
 				});
 			});
