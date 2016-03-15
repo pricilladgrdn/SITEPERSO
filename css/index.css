@@ -130,6 +130,7 @@ li {
 	list-style-type: none;
 	position:absolute;
 	cursor:move;
+	visibility:hidden;
 }
 
 

@@ -120,14 +120,17 @@
     		return Math.floor((Math.random() * (max - min + 1)) + min);
 		}
 
-		$('ul.images li').each(function() {
-			var w = Math.floor($(this).width() / $(window).width() * 100);
-			var h = Math.floor($(this).height() / $(window).height() * 100);
-			console.log($(this).width() + ' ' + $(this).height() + ' ' + h + ' ' + w);
-			$(this).css('top', randomize(10, 90-h) + '%')
-				   .css('left', randomize(10, 90-w) + '%')
-				   .css('z-index', randomize(50, 100));
-		});
+		window.onload = function() {
+			$('ul.images li').each(function() {
+					var w = Math.floor($(this).width() / $(window).width() * 100);
+					var h = Math.floor($(this).height() / $(window).height() * 100);
+					console.log($(this).width() + ' ' + $(this).height() + ' ' + h + ' ' + w);
+					$(this).css('top', randomize(10, 90-h) + '%')
+						   .css('left', randomize(10, 90-w) + '%')
+						   .css('z-index', randomize(50, 100))
+						   .css('visibility', 'visible');
+			});
+		}
 
 		if ('ontouchstart' in window) {
 			$('#prenom').css('font-size', 1);
