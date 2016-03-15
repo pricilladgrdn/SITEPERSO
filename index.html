@@ -115,32 +115,23 @@
 		<a href="mailto:degardin.pricilla@gmail.com" > degardin.pricilla&#8239;[at]&#8239;gmail.com</a></br>	
 	</div>
 	<script>
-			function randomize(min, max) {
-	    		return Math.floor((Math.random() * (max - min + 1)) + min);
-			}
-			$(function() {
-				$('ul.images li').mousedown(function() {
-					$(this).css('z-index', 100).siblings().each(function() {
-						style = window.getComputedStyle($(this)[0]);
-						zindex = style.getPropertyValue('z-index');
-						if(zindex > 0)
-							$(this).css('z-index', zindex - 1);
-					});
-				}).draggable();
 
-				$('ul.images li').each(function() {
-					var w = Math.floor($(this).width() / $(window).width() * 100);
-					var h = Math.floor($(this).height() / $(window).height() * 100);
-					console.log(h + ' ' + w);
-					$(this).css('top', randomize(10, 90-h) + '%')
-						   .css('left', randomize(10, 90-w) + '%')
-						   .css('z-index', randomize(50, 100));
-				});
-			});
+		function randomize(min, max) {
+    		return Math.floor((Math.random() * (max - min + 1)) + min);
+		}
+
+		$('ul.images li').each(function() {
+			var w = Math.floor($(this).width() / $(window).width() * 100);
+			var h = Math.floor($(this).height() / $(window).height() * 100);
+			console.log(h + ' ' + w);
+			$(this).css('top', randomize(10, 90-h) + '%')
+				   .css('left', randomize(10, 90-w) + '%')
+				   .css('z-index', randomize(50, 100));
+		});
 
 		if ('ontouchstart' in window) {
-			$('#prenom').css('font-size', 23);
-			$('#infos').css('font-size', 21);
+			$('#prenom').css('font-size', 31);
+			$('#infos').css('font-size', 27);
 			// target elements with the "draggable" class
 			interact('.draggable')
 			.draggable({
@@ -180,6 +171,16 @@
 
 			// this is used later in the resizing and gesture demos
 			window.dragMoveListener = dragMoveListener;
+		} else {
+
+			$('ul.images li').mousedown(function() {
+				$(this).css('z-index', 100).siblings().each(function() {
+					style = window.getComputedStyle($(this)[0]);
+					zindex = style.getPropertyValue('z-index');
+					if(zindex > 0)
+						$(this).css('z-index', zindex - 1);
+				});
+			}).draggable();
 		}
 		</script>
 </body>
