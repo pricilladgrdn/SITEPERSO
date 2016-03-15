@@ -123,7 +123,7 @@
 		$('ul.images li').each(function() {
 			var w = Math.floor($(this).width() / $(window).width() * 100);
 			var h = Math.floor($(this).height() / $(window).height() * 100);
-			console.log(h + ' ' + w);
+			console.log($(this).width() + ' ' + $(this).height() + ' ' + h + ' ' + w);
 			$(this).css('top', randomize(10, 90-h) + '%')
 				   .css('left', randomize(10, 90-w) + '%')
 				   .css('z-index', randomize(50, 100));
