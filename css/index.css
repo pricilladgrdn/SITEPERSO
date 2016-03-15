@@ -24,7 +24,7 @@ url('../font/spina-regular-regular-webfont.svg#spina-regularregular') format('sv
 #prenom{
 	margin-left:1%;
 	margin-top:1%;
-	font-size: 1.3vw;
+	/*font-size: 1.3vw;*/
 
 	/*position: fixed;
 	top: 40px;
@@ -37,8 +37,38 @@ url('../font/spina-regular-regular-webfont.svg#spina-regularregular') format('sv
 	bottom: 2%;
     width: 98%;
 	text-align: right;
-	font-size: 1vw;
+	/*font-size: 1vw;*/
 	line-height: 17px;
+}
+
+@media (min-width: 858px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 780px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 702px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 724px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 623px) {
+    html {
+        font-size: 8px;
+    }
 }
 
 /*tel{
