@@ -1,78 +1,41 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <title>&#10697; Stand de Motifs</title>
-  <link rel="stylesheet" href="css/projet.css">
-
+	<meta charset="utf-8">
+	<title>&#10697; Stand de Motifs</title>
+	<link rel="stylesheet" href="css/projet.css">
+	<link rel="icon" type="image/png" href="Images/favicon.png" />
 	<script type="text/javascript" src="script/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="script/jquery-ui-min.js"></script>
-	<script type="text/javascript" src="script/jquery.chipmunky-gallery.js"></script>
-	<script type="text/javascript" src="script/global.js"></script>
-
-<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
-
-
+	<script type="text/javascript" src="script/projet.js"></script>
+	<script type="text/javascript" src="script/ga.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
- 
-<div id="prenom" class="boite">
-<a href="http://www.pricilladegardin.xyz"> &#8598; </a>
-</div>
-
-<div id="contact" class="boite">
-<a href="projet_bbb.html"> &#x2192; </a>
-</div>
-
-
-	
-		<div id="description">
-<p><div id="italic">Installation</div>
-</br>
-Stand de motifs réalisé en collaboration avec Justine Harmand, lors des journées portes ouvertes de l'ISDAT de Toulouse.
-</br>
-Production évolutive du 6 au 7 mars 2015.
-
-
-
-
-
-	</p>
-		</div>
-
-		<div id="images">
-			<img src="Images/projet_stand/stand_2.gif"/>
-   		 </div>
-
-<script>
-   		 	var tmp = 1;
-			function next() {
-					tmp++;
-					if(tmp == 1)
-						tmp = 1;
-	    			$('#img' + tmp).css('z-index', 1).siblings().css('z-index', -1);
+	<div id="prenom" class="boite">
+		<a href="http://www.pricilladegardin.xyz">&#8598;</a>
+	</div>
+	<div id="contact" class="boite">
+		<a href="projet_bbb.html">&#x2192;</a>
+	</div>
+	<div id="description">
+		<p>
+			<div id="italic">Installation</div></br>
+			Stand de motifs réalisé en collaboration avec Justine Harmand, lors des journées portes ouvertes de l'ISDAT de Toulouse.</br>
+			Production évolutive du 6 au 7 mars 2015.
+		</p>
+	</div>
+	<div id="images">
+		<img src="Images/projet_stand/stand_2.gif"/>
+   	</div>
+   	<script>
+		$(document).keydown(function(e){
+			switch (e.which){
+				case 37: window.location.href = "projet_motif.html"; break; //lien du projet d'avant
+				case 39: window.location.href = "projet_bbb.html"; break; // lien du projet d'après	
 			}
-				$(document).keydown(function(e){
-   				switch (e.which){
-   					case 37: window.location.href = "projet_motif.html"; break; //lien du projet d'avant
-     				case 39: window.location.href = "projet_bbb.html"; break; // lien du projet d'après
-   				}
-   			});
-   		 </script>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-54337758-3', 'auto');
-  ga('send', 'pageview');
-
-</script>
-
-
+		});
+	</script>
 </body>
 </html>
 

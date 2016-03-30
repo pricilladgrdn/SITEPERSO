@@ -11,138 +11,127 @@ url('../font/spina-regular-regular-webfont.svg#spina-regularregular') format('sv
 }*/
 	
 
-	
-
-	.boite{
-		/*border: solid 2px #0F0;
-		padding: 10px;*/
-		font-family: 'Karla', sans-serif;
-		z-index: -1;
-	
-		
-
-		
-		
-	}
+.boite{
+	/*border: solid 2px #0F0;
+	padding: 10px;*/
+	font-family: 'Karla', sans-serif;
+	z-index: -1;		
+}
 
 /* M E N U  P A G E  D ' A C C U E I L */
 /* M E N U  P A G E  D ' A C C U E I L */
 
-	#prenom{
-		margin-left:1%;
-		margin-top:1%;
-		font-size: 16px;
+#prenom{
+	top:2%;
+	left:2%;
+	position: fixed;
+	font-size: 16px;
 
-		/*position: fixed;
-		top: 40px;
-		left: 5%;*/
-	}
-	#infos{
-		
-		margin-top:47%;
-		margin-right: 1%;
-		margin-bottom:0%;
-		text-align: right;
-		font-size: 13px;
-		line-height: 17px;
-	}
+	/*position: fixed;
+	top: 40px;
+	left: 5%;*/
+}
 
-	/*tel{
-		text-align: right;
-		margin-right: 1%;
-		margin-top:0%;
-		margin-bottom:0%;
-		font-size: 13px;
-		line-height: 17px;
-		/*position: fixed;
-		top: 40px;
-		left: 47%;*/
-	
-	/*#mail{
-		text-align: right;
-		margin-right: 1%;
-		margin-top:0%;
-		margin-bottom:2%;
-		font-size: 13px;
-		line-height: 17px;
-		/*position: fixed;
-		top: 40px;
-		left: 90%;*/
-	
-	
+#infos{
+	margin-right: 1%;
+	position: fixed;
+	bottom: 2%;
+    width: 98%;
+	text-align: right;
+	font-size: 13px;
+	line-height: 17px;
+}
 
+/*tel{
+	text-align: right;
+	margin-right: 1%;
+	margin-top:0%;
+	margin-bottom:0%;
+	font-size: 13px;
+	line-height: 17px;
+	/*position: fixed;
+	top: 40px;
+	left: 47%;*/
+
+/*#mail{
+	text-align: right;
+	margin-right: 1%;
+	margin-top:0%;
+	margin-bottom:2%;
+	font-size: 13px;
+	line-height: 17px;
+	/*position: fixed;
+	top: 40px;
+	left: 90%;*/
+	
 
 /* L I E N S  M E N U */
 /* L I E N S  M E N U */
 
-		#prenom a, #prenom a:link, #prenom a:visited,
-		#infos a, #infos a:link, #infos a:visited,
-		#tel a, #tel a:link, #tel a:visited, 
-		#mail a, #mail  a:link, #mail  a:visited { 
-			text-decoration: none;
-			font-family: 'Karla', sans-serif;
-			/*color:#551CFF;*/
-			color:black;
-			}
+#prenom a, #prenom a:link, #prenom a:visited,
+#infos a, #infos a:link, #infos a:visited,
+#tel a, #tel a:link, #tel a:visited, 
+#mail a, #mail  a:link, #mail  a:visited { 
+	text-decoration: none;
+	font-family: 'Karla', sans-serif;
+	/*color:#551CFF;*/
+	color:black;
+	}
 
-		#prenom a:hover, #infos a:hover { 
-			/*color:#1AFBB8;*/
-			color:white;
-			}
+#prenom a:hover, #infos a:hover { 
+	/*color:#1AFBB8;*/
+	color:white;
+	}
 
 
 
 /* S E C T I O N  */
 /* S E C T I O N  */
 
+section {
+	z-index:1; 
+	list-style-type: none;
+	text-decoration: none;	
+	display:block;
+}
 
-
-
-	section {
-		z-index:1; 
-		list-style-type: none;
-		text-decoration: none;	
-		display:block;
-	}
-
+li a, li a:link, li a:visited {
+	position:absolute;
+	top:0;
+	right:0;
+	text-decoration:none;
+	font-family: 'Karla', sans-serif;
+	font-size: 19px;
+	text-align: center;
 	
+	width: 22px;
+	height: 22px;
+	color:white;
+	background-color: black;
+	display: none;
 
-	li a, li a:link, li a:visited {
-		position:absolute;
-		top:0;
-		right:0;
-		text-decoration:none;
-		font-family: 'Karla', sans-serif;
-		font-size: 19px;
-		text-align: center;
-		
-		width: 22px;
-		height: 22px;
-		color:white;
-		background-color: black;
-		display: none;
+}
 
-	}
+li:hover a {
+	display: block;
+}
 
-	li:hover a {
-		display: block;
-	}
+li a:hover {
+	color:white;
+	background-color: #1AFBB8;
+}
 
-	li a:hover {
-		color:white;
-		background-color: #1AFBB8;
-	}
+/*#1AFBB8
+#551CFF*/
 
-	/*#1AFBB8
-	#551CFF*/
-
-	li {
-		height:auto;
-		width:auto;
-		list-style-type: none;
-		position:absolute;
-		cursor:move;
-	}
+li {
+	height:auto;
+	width:auto;
+	list-style-type: none;
+	position:absolute;
+	cursor:move;
+	visibility:hidden;
+}
 
 
 /* I N F O  D E  C O N T A C T */
