@@ -147,11 +147,24 @@ color: black;
 
 font-family: 'Karla', sans-serif;
 font-size: 13px;
-
 }
+
+#descriptionunvingt{
+overflow: scroll;
+position: fixed;
+width:250px;
+height: 600px;
+margin-top: 0%;
+margin-left: 6%;
+color: black;
+
+font-family: 'Karla', sans-serif;
+font-size: 13px;
+}
+
 #italic {
-font-style: italic;
-font-size: 16px;
+margin-left: -1px;
+font-size: 18px;
 }
 
 #images {
