@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>&#10697; 11.11.15</title>
+	<link rel="stylesheet" href="css/projet.css">
+	<link rel="icon" type="image/png" href="Images/favicon.png" />
+	<script type="text/javascript" src="script/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="script/jquery-ui-min.js"></script>
+	<script type="text/javascript" src="script/projet.js"></script>
+	<script type="text/javascript" src="script/ga.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div id="prenom" class="boite">
+		<a href="http://www.pricilladegardin.xyz">&#8598;</a>
+	</div>
+
+	<div id="contact" class="boite">
+		<a href="projet_horsdoeuvre.html">&#x2192;</a>
+	</div>
+	<div id="description">
+		<p>
+			<div id="italic">11.11.15</div></br>
+			
+			Reportage photographique lors des commémorations du 11 novembre 2015 </br>à Verdun.</br></br>
+			140 x 180 mm</br>
+			2016
+		</p>
+	</div>
+	<div id="images" onclick="next(7)">
+		<img id="img1" src="Images/projet_transhumance/transhumance1.jpg" style="z-index:1"/>
+		<img id="img2" src="Images/projet_transhumance/transhumance2.jpg" style="z-index:-1"/>
+		<img id="img3" src="Images/projet_transhumance/transhumance3.jpg" style="z-index:-1"/>
+		<img id="img4" src="Images/projet_transhumance/transhumance4.jpg" style="z-index:-1"/>
+		<img id="img5" src="Images/projet_transhumance/transhumance5.jpg" style="z-index:-1"/>
+		<img id="img6" src="Images/projet_transhumance/transhumance6.jpg" style="z-index:-1"/>
+		<img id="img7" src="Images/projet_transhumance/transhumance7.jpg" style="z-index:-1"/>
+	</div>
+	<script>
+		$(document).keydown(function(e){
+			switch (e.which){
+				case 37: window.location.href = "projet_secret.html"; break; //lien du projet d'avant
+				case 39: window.location.href = "projet_horsdoeuvre.html"; break; // lien du projet d'après	
+			}
+		});
+	</script>
+</body>
+</html>
+
