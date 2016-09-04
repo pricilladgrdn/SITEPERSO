@@ -17,6 +17,7 @@
 	</div>
 	<section>
 		<article>
+			<div id="loading"></div>
 			<ul class="images">
 				<li class="draggable">
 					<img src="Images/SITE_unvingt.png" alt="Exposition Un vingtième, une exposition imprimée de Yann Sérandour par huit étudiants de la Hear"/>
@@ -116,6 +117,7 @@
 
 
 	<div id="infos" class="boite">
+		<!--<a href="GALERIE/indexgalerie.html">galerie</a> / -->
 		<a href="Images/CV_042016.pdf" download="CV_Pricilla_Degardin_FR" target="blank">CV</a></br>
 		+33 6 59 68 78 03</br>
 		<a href="mailto:degardin.pricilla@gmail.com" > degardin.pricilla&#8239;[at]&#8239;gmail.com</a></br>	
@@ -128,14 +130,17 @@
 		}
 
 		window.onload = function() {
-			$('ul.images li').each(function() {
-					var w = Math.floor($(this).width() / $(window).width() * 100);
-					var h = Math.floor($(this).height() / $(window).height() * 100);
-					$(this).css('top', randomize(10, 90-h) + '%')
-						   .css('left', randomize(10, 90-w) + '%')
-						   .css('z-index', randomize(50, 100))
-						   .css('visibility', 'visible');
-			});
+			setTimeout(function() {
+				$('#loading').hide();
+				$('ul.images li').each(function() {
+						var w = Math.floor($(this).width() / $(window).width() * 100);
+						var h = Math.floor($(this).height() / $(window).height() * 100);
+						$(this).css('top', randomize(10, 90-h) + '%')
+							   .css('left', randomize(10, 90-w) + '%')
+							   .css('z-index', randomize(50, 100))
+							   .css('visibility', 'visible');
+				});
+			}, 100);
 		}
 
 		if ('ontouchstart' in window) {

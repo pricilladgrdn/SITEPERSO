@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title>&#10697; Stand de Motifs</title>
+	<title>Stand de Motifs</title>
 	<link rel="stylesheet" href="css/projet.css">
 	<link rel="icon" type="image/png" href="Images/favicon.png" />
 	<script type="text/javascript" src="script/jquery-2.1.1.min.js"></script>
@@ -12,21 +12,23 @@
 	<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div id="prenom" class="boite">
-		<a href="http://www.pricilladegardin.xyz">&#8598;</a>
+	<div class="fleches">
+		<a id="back" href="http://www.pricilladegardin.xyz">&#8598;</a>
+		<a id="next" href="projet_bbb.html" class="infobulle">&#x2192;<span>Utilisez les flèches du clavier pour changer de projet</span></a>
 	</div>
-	<div id="contact" class="boite">
-		<a href="projet_bbb.html">&#x2192;</a>
-	</div>
+	
+<div id="contenu">
 	<div id="description">
-		<p>
-			<div id="italic">Installation</div></br>
-			Stand de motifs réalisé en collaboration avec Justine Harmand, lors des journées portes ouvertes de l'ISDAT de Toulouse.</br>
-			Production évolutive du 6 au 7 mars 2015.
-		</p>
+
+			<div id="titre">Installation</div>
+
+			<p>Stand de motifs réalisé en collaboration avec Justine Harmand, lors des journées portes ouvertes de l'ISDAT de Toulouse.</p>
+
+			<p>Production évolutive du 6 au 7 mars 2015.</p>
 	</div>
+	<div id="loading"></div>
 	<div id="images">
-		<img src="Images/projet_stand/stand_2.gif"/>
+		<img id="img1" src="Images/projet_stand/stand_2.gif"/>
    	</div>
    	<script>
 		$(document).keydown(function(e){

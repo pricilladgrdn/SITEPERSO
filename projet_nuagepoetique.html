@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title>&#10697; Nuages</title>
+	<title>Nuages #1</title>
 	<link rel="stylesheet" href="css/projet.css">
 	<link rel="icon" type="image/png" href="Images/favicon.png" />
 	<script type="text/javascript" src="script/jquery-2.1.1.min.js"></script>
@@ -12,26 +12,29 @@
 	<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div id="prenom" class="boite">
-		<a href="http://www.pricilladegardin.xyz">&#8598;</a>
+	<div class="fleches">
+		<a id="back" href="http://www.pricilladegardin.xyz">&#8598;</a>
+		<a id="next" href="projet_nuagedidactique.html" class="infobulle">&#x2192;<span>Utilisez les flèches du clavier pour changer de projet</span></a>
 	</div>
-	<div id="contact" class="boite">
-		<a href="projet_nuagedidactique.html">&#x2192;</a>
-	</div>
+	
+<div id="contenu">
 	<div id="description">
-		<p>
-			<div id="italic">Nuages</div></br>
-			Comment faire rentrer des nuages</br>
+		
+			<span id="titre">Nuages</span>
+
+			<p>Comment faire entrer des nuages</br>
 			dans une grille ?</br>
 			Concevoir une édition à visée poétique</br>
 			en se référant au Livre de l’Intranquillité</br>
 			de Fernando Pessoa, uniquement</br>
-			à partir de la grille de mise en page et d'images.</br></br>
-			13,8 x 20 cm</br>
+			à partir de la grille de mise en page et d'images.</p>
+
+			<p>13,8 x 20 cm</br>
 			32 pages</br>
-			2012
-		</p>
+			2012</p>
+		
 	</div>
+	<div id="loading"></div>
 	<div id="images" onclick="next(15)">
 		<img id="img1" src="Images/projet_nuagepoetique/poetique1.jpg" style="z-index:1"/>
 		<img id="img2" src="Images/projet_nuagepoetique/poetique2.jpg" style="z-index:-1"/>
@@ -49,10 +52,11 @@
 		<img id="img14" src="Images/projet_nuagepoetique/poetique14.jpg" style="z-index:-1"/>
 		<img id="img15" src="Images/projet_nuagepoetique/poetique15.jpg" style="z-index:-1"/>
 	</div>
+</div>
 	<script>
 		$(document).keydown(function(e){
 			switch (e.which){
-				case 37: window.location.href = "projet_surkrut.html"; break; //lien du projet d'avant
+				case 37: window.location.href = "projet_unvingt.html"; break; //lien du projet d'avant
 				case 39: window.location.href = "projet_nuagedidactique.html"; break; // lien du projet d'après	
 			}
 		});

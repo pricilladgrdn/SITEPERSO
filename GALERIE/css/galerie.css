@@ -1,0 +1,144 @@
+html,body{
+	/*border: solid 2px red;*/
+	margin:auto;
+	margin-bottom: 3%;
+	width: 100%;
+	height:100%;
+	font-family: 'Karla', sans-serif;
+	position:fixed;		
+	}
+
+/* T I T R E  P O U R  R E T O U R */
+
+#prenom{
+	text-decoration:none;
+	font-family: 'Karla', sans-serif;
+	top:2%;
+	left:2%;
+	position: fixed;
+	font-size: 16px;
+}
+
+#prenom:link{
+	color:black;	
+}
+
+#prenom:visited{
+	color:black;	
+}
+
+#prenom:hover{
+	color:white;	
+}
+
+
+
+/* D I V  I M A G E */
+
+
+#galerie{
+	
+	margin-left:12%;
+	margin-top:5%;
+	overflow: scroll;
+	width:76%;
+	height: 80%;
+	display:block;	
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	background: url(../Images/IMG_20160722_093444.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+}
+
+.image1{
+	background: url(../Images/IMG_20160722_093444.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+
+}
+
+.image2{
+	background: url(../Images/IMG_20160806_145014.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+
+}
+
+.image3{
+	background: url(../Images/IMG_20160806_145314.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+
+}
+
+.image4{
+	background: url(../Images/IMG_20160806_152739.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+
+}
+
+.image5{
+	background: url(../Images/IMG_20160806_153806.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+
+}
+
+.image6{
+	background: url(../Images/IMG_20160812_151211.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+
+}
+
+.image7{
+	background: url(../Images/IMG_20160819_190006.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+
+}
+
+.image8{
+	background: url(../Images/IMG_20160722_093444.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+
+}
+
+/* D I V  L E G E N D E */
+
+#legende{
+	width:100%;
+	top:2%;
+	height:3%;
+	position:fixed;
+	padding-top: 2%;
+	font-size: 20px;
+	z-index:1;
+}
+
+
+

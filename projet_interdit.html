@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title>&#10697; DVD Interdits</title>
+	<title>DVD Interdits</title>
 	<link rel="stylesheet" href="css/projet.css">
 	<link rel="icon" type="image/png" href="Images/favicon.png" />
 	<script type="text/javascript" src="script/jquery-2.1.1.min.js"></script>
@@ -12,26 +12,26 @@
 	<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div id="prenom" class="boite">
-		<a href="http://www.pricilladegardin.xyz">&#8598;</a>
+	<div class="fleches">
+		<a id="back" href="http://www.pricilladegardin.xyz">&#8598;</a>
+		<a id="next" href="projet_chambord.html" class="infobulle">&#x2192;<span>Utilisez les flèches du clavier pour changer de projet</span></a>
 	</div>
-	<div id="contact" class="boite">
-		<a href="projet_chambord.html">&#x2192;</a>
-	</div>
+	
+<div id="contenu">
 	<div id="description">
-		<p>
-			<div id="italic">Collection DVD Interdits</div></br>
+
+			<div id="titre">Collection DVD Interdits</div>
 			
-			Censurés à leur époque de diffusion,</br>
-			ces DVDs sont cachés par un jeu complèxe de pliage.</br>
-			Comme un écrin de papier,</br>
-			les informations relatives au film,</br>
-			une fois déployées, peuvent aussi s'afficher.</br></br>
-			Poster A3</br>
+			<p>Censurés à leur époque de diffusion,</br>
+			ces films sont cachés par un jeu complèxe de pliage.</br>
+			Comme un écrin de papier, le générique</br>une fois déployé, peut aussi s'afficher.</br>
+			</p>
+			
+			<p>Poster A3</br>
 			Boitier 12,4 x 12,4 cm</br>
-			2013
-		</p>
+			2013</p>
 	</div>
+	<div id="loading"></div>
 	<div id="images" onclick="next(20)">
 		<img id="img1" src="Images/projet_interdit/interdit1.jpg" style="z-index:1"/>
 		<img id="img2" src="Images/projet_interdit/interdit2.jpg" style="z-index:-1"/>

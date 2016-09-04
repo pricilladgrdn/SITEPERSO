@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title>&#10697; Collective Collection</title>
+	<title>Collective Collection</title>
 	<link rel="stylesheet" href="css/projet.css">
 	<link rel="icon" type="image/png" href="Images/favicon.png" />
 	<script type="text/javascript" src="script/jquery-2.1.1.min.js"></script>
@@ -12,17 +12,17 @@
 	<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div id="prenom" class="boite">
-		<a href="http://www.pricilladegardin.xyz">&#8598;</a>
+	<div class="fleches">
+		<a id="back" href="http://www.pricilladegardin.xyz">&#8598;</a>
+		<a id="next" href="projet_germinal.html" class="infobulle">&#x2192;<span>Utilisez les flèches du clavier pour changer de projet</span></a>
 	</div>
-	<div id="contact" class="boite">
-		<a href="projet_germinal.html">&#x2192;</a>
-	</div>
+
+<div id="contenu">
 	<div id="description">
-		<p>
-			<div id="italic">Collective Collection</div></br>
+		
+			<div id="titre">Collective Collection</div>
 			
-			Collective Collection regroupe différentes œuvres hétéroclites collectées et mises en espace par l’artiste Laurent Fiévet</br>
+			<p>Collective Collection regroupe différentes œuvres hétéroclites collectées et mises en espace par l’artiste Laurent Fiévet</br>
 			au <a href="http://www.lebbb.org" target="blank">BBB</a> ; centre d'art Toulousain.</br></br>
 			Constituée en majeure partie</br>
 			d’œuvres vidéos, cette exposition</br>
@@ -32,18 +32,22 @@
 			à partir de fragments collectés avec</br>
 			un téléphone portable.</br>
 			Les informations de l'exposition</br>
-			sont pensées dans un lettrage manuel pixelisé, qui renvoit à la texture des image initiales.</br></br>
-			70 x 100 cm</br></br>
+			sont pensées dans un lettrage manuel pixelisé, qui renvoit à la texture des images initiales.</p>
+			
+			<p>70 x 100 cm</br>
 			Exposition du 14/01 au 14/02/2015</br>
-			au BBB Centre d'art, Toulouse
-		</p>
+			au BBB Centre d'art, Toulouse</p>
+		
 	</div>
+	<div id="loading"></div>
 	<div id="images" onclick="next(5)">
 		<img id="img1" src="Images/projet_bbb/bbb_affiche.jpg" style="z-index:1"/>
 		<img id="img2" src="Images/projet_bbb/bbb_detail1.jpg" style="z-index:-1"/>
 		<img id="img3" src="Images/projet_bbb/bbb_detail2.jpg" style="z-index:-1"/>
 		<img id="img4" src="Images/projet_bbb/bbb_detail3.jpg" style="z-index:-1"/>
 		<img id="img5" src="Images/projet_bbb/bbb_detail4.jpg" style="z-index:-1"/>
+		
+		
 	</div>
 	<script>
 		$(document).keydown(function(e){

@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title>&#10697; Papillon(s)</title>
+	<title>Papillon(s)</title>
 	<link rel="stylesheet" href="css/projet.css">
 	<link rel="icon" type="image/png" href="Images/favicon.png" />
 	<script type="text/javascript" src="script/jquery-2.1.1.min.js"></script>
@@ -12,25 +12,27 @@
 	<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div id="prenom" class="boite">
-		<a href="http://www.pricilladegardin.xyz">&#8598;</a>
+	<div class="fleches">
+		<a id="back" href="http://www.pricilladegardin.xyz">&#8598;</a>
+		<a id="next" href="projet_motif.html" class="infobulle">&#x2192;<span>Utilisez les flèches du clavier pour changer de projet</span></a>
 	</div>
-	<div id="contact" class="boite">
-		<a href="projet_motif.html">&#x2192;</a>
-	</div>
+	
+<div id="contenu">
 	<div id="description">
-		<p>
-			<div id="italic">Papillon(s)</div></br>
-			« Du brouillage des métaphores.</br>
+
+			<div id="titre">Papillon(s)</div>
+
+			<p>« Du brouillage des métaphores.</br>
 			De l'éphémère et du design graphique.</br>
 			De l'affiche "Un Papillon"</br>
 			de Fanette Mellier ».</br></br>
-			Mise en page de l'<a href="http://www.t-o-m-b-o-l-o.eu/meta/papillons/" target="blank">essai</a> de Vanina Pinter.</br></br>
-			15 x 20 cm</br>
+			Mise en page de l'<a href="http://www.t-o-m-b-o-l-o.eu/meta/papillons/" target="blank">essai</a> de Vanina Pinter.</p>
+			
+			<p>15 x 20 cm</br>
 			28 pages</br>
-			2014
-		</p>
+			2014</p>
 	</div>
+	<div id="loading"></div>
 	<div id="images" onclick="next(13)">
 		<img id="img1" src="Images/projet_papillon/pap1.jpg" style="z-index:1"/>
 		<img id="img2" src="Images/projet_papillon/pap2-2.jpg" style="z-index:-1"/>

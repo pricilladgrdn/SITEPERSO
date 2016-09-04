@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title>&#10697; Germinal</title>
+	<title>Germinal</title>
 	<link rel="stylesheet" href="css/projet.css">
 	<link rel="icon" type="image/png" href="Images/favicon.png" />
 	<script type="text/javascript" src="script/jquery-2.1.1.min.js"></script>
@@ -12,27 +12,29 @@
 	<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div id="prenom" class="boite">
-		<a href="http://www.pricilladegardin.xyz">&#8598;</a>
+	<div class="fleches">
+		<a id="back" href="http://www.pricilladegardin.xyz">&#8598;</a>
+		<a id="next" href="projet_data.html" class="infobulle">&#x2192;<span>Utilisez les flèches du clavier pour changer de projet</span></a>
 	</div>
-	<div id="contact" class="boite">
-		<a href="projet_data.html">&#x2192;</a>
-	</div>
+	
+<div id="contenu">
 	<div id="description">
-		<p>
-			<div id="italic">Germinal</div></br>
+		
+			<div id="titre">Germinal</div>
 			
-			« Si on avait la possibilité de repartir de zéro, à l'intérieur de huit mètres par dix, on ferait comment ?</br>
+			<p>« Si on avait la possibilité de repartir de zéro, à l'intérieur de huit mètres par dix, on ferait comment ?</br>
 			Germinal met en scène quatre individus qui envisagent le plateau de théâtre comme un espace vierge dans lequel tout est à faire. De cet espace, ils font émerger un système. En étant Candide, on dirait : un Monde. L'observer se déployer nous donne l'occation de voir se construire une nouvelle histoire du langage, des savoirs, et des structures sociétales ».</br></br>
-			Mise en page du spectacle <a href="http://www.amicaledeproduction.com/projets/germinal.php">Germinal</a> conçu par Antoine Defoort et Halory Goerger en 2014.</br></br>
+			Mise en page du spectacle <a href="http://www.amicaledeproduction.com/projets/germinal.php" target="blank">Germinal</a> conçu par Antoine Defoort et Halory Goerger en 2014.</br></br>
 			Création d'un système typographique et chromatique en fonction des différents types de langages (sans empattement pour le langage pensé, avec empattement pour le langage parlé, italique pour </br>
-			le chant…).</br>
-			D'abord énigmatique, ce système mis en place éclaire progressivement le lecteur.</br></br>
-			10 x 16 cm</br>
+			le chant, une couleur par comédien).</br>
+			D'abord énigmatique, ce système mis en place éclaire progressivement le lecteur.</p>
+			
+			<p>10 x 16 cm</br>
 			Papier layout 75 g</br>
 			340 pages
-		</p>
+			</p>
 	</div>
+	<div id="loading"></div>
 	<div id="images" onclick="next(47)">
 		<img id="img1" src="Images/projet_germinal/germ0.jpg" style="z-index:1"/>
 		<img id="img2" src="Images/projet_germinal/germ1.jpg" style="z-index:-1"/>

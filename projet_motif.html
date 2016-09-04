@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title>&#10697; Motifs</title>
+	<title>Motifs</title>
 	<link rel="stylesheet" href="css/projet.css">
 	<link rel="icon" type="image/png" href="Images/favicon.png" />
 	<script type="text/javascript" src="script/jquery-2.1.1.min.js"></script>
@@ -12,46 +12,45 @@
 	<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div id="prenom" class="boite">
-		<a href="http://www.pricilladegardin.xyz">&#8598;</a>
+	<div class="fleches">
+		<a id="back" href="http://www.pricilladegardin.xyz">&#8598;</a>
+		<a id="next" href="projet_standjpo.html" class="infobulle">&#x2192;<span>Utilisez les flèches du clavier pour changer de projet</span></a>
 	</div>
-
-	<div id="contact" class="boite">
-		<a href="projet_standjpo.html">&#x2192;</a>
-	</div>
+	
+<div id="contenu">
 	<div id="description">
-		<p>
-			<div id="italic">Dessin</div></br>
-			Expérimentations graphiques</br>
-			à base de motifs collectés et dessinés.</br></br>
-			Techniques mixtes</br>
-			2014-2015
-		</p>
+			<div id="titre">Dessin</div>
+
+			<p>Expérimentations graphiques</br>
+			à base de motifs collectés et dessinés.</p>
+
+			<p>Techniques mixtes</br>
+			2014-2015</p>
 	</div>
-	<div id="images" onclick="next(23)">
+	<div id="loading"></div>
+	<div id="images" onclick="next(22)">
 		<img id="img1" src="Images/projet_motif/motifscan1.jpg" style="z-index:1"/>
 		<img id="img2" src="Images/projet_motif/motifscan2.jpg" style="z-index:-1"/>
 		<img id="img3" src="Images/projet_motif/motifscan3.jpg" style="z-index:-1"/>
 		<img id="img4" src="Images/projet_motif/motifscan4.jpg" style="z-index:-1"/>
 		<img id="img5" src="Images/projet_motif/motiftable1.jpg" style="z-index:-1"/>
-		<img id="img6" src="Images/projet_motif/motifab.jpg" style="z-index:-1"/>
-		<img id="img7" src="Images/projet_motif/motifphoto.jpg" style="z-index:-1"/>
-		<img id="img8" src="Images/projet_motif/motifphotoo.jpg" style="z-index:-1"/>
-		<img id="img9" src="Images/projet_motif/ed_motif1.jpg" style="z-index:-1"/>
-		<img id="img10" src="Images/projet_motif/ed_motif2.jpg" style="z-index:-1"/>
-		<img id="img11" src="Images/projet_motif/ed_motif3.jpg" style="z-index:-1"/>
-		<img id="img12" src="Images/projet_motif/ed_motif4.jpg" style="z-index:-1"/>
-		<img id="img13" src="Images/projet_motif/ed_motif5.jpg" style="z-index:-1"/>
-		<img id="img14" src="Images/projet_motif/ed_motif6.jpg" style="z-index:-1"/>
-		<img id="img15" src="Images/projet_motif/ed_motif7.jpg" style="z-index:-1"/>
-		<img id="img16" src="Images/projet_motif/ed_motif8.jpg" style="z-index:-1"/>
-		<img id="img17" src="Images/projet_motif/ed_motif9.jpg" style="z-index:-1"/>
-		<img id="img18" src="Images/projet_motif/ed_motif10.jpg" style="z-index:-1"/>
-		<img id="img19" src="Images/projet_motif/ed_motif11.jpg" style="z-index:-1"/>
-		<img id="img20" src="Images/projet_motif/ed_motif12.jpg" style="z-index:-1"/>
-		<img id="img21" src="Images/projet_motif/ed_motif13.jpg" style="z-index:-1"/>
-		<img id="img22" src="Images/projet_motif/ed_motif14.jpg" style="z-index:-1"/>
-		<img id="img23" src="Images/projet_motif/ed_motif15.jpg" style="z-index:-1"/>
+		<img id="img6" src="Images/projet_motif/motifphoto.jpg" style="z-index:-1"/>
+		<img id="img7" src="Images/projet_motif/motifphotoo.jpg" style="z-index:-1"/>
+		<img id="img8" src="Images/projet_motif/ed_motif1.jpg" style="z-index:-1"/>
+		<img id="img9" src="Images/projet_motif/ed_motif2.jpg" style="z-index:-1"/>
+		<img id="img10" src="Images/projet_motif/ed_motif3.jpg" style="z-index:-1"/>
+		<img id="img11" src="Images/projet_motif/ed_motif4.jpg" style="z-index:-1"/>
+		<img id="img12" src="Images/projet_motif/ed_motif5.jpg" style="z-index:-1"/>
+		<img id="img13" src="Images/projet_motif/ed_motif6.jpg" style="z-index:-1"/>
+		<img id="img14" src="Images/projet_motif/ed_motif7.jpg" style="z-index:-1"/>
+		<img id="img15" src="Images/projet_motif/ed_motif8.jpg" style="z-index:-1"/>
+		<img id="img16" src="Images/projet_motif/ed_motif9.jpg" style="z-index:-1"/>
+		<img id="img17" src="Images/projet_motif/ed_motif10.jpg" style="z-index:-1"/>
+		<img id="img18" src="Images/projet_motif/ed_motif11.jpg" style="z-index:-1"/>
+		<img id="img19" src="Images/projet_motif/ed_motif12.jpg" style="z-index:-1"/>
+		<img id="img20" src="Images/projet_motif/ed_motif13.jpg" style="z-index:-1"/>
+		<img id="img21" src="Images/projet_motif/ed_motif14.jpg" style="z-index:-1"/>
+		<img id="img22" src="Images/projet_motif/ed_motif15.jpg" style="z-index:-1"/>
 	</div>
 	<script>
 		$(document).keydown(function(e){

@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title>&#10697; Festival Transhumance</title>
+	<title>Festival Transhumance</title>
 	<link rel="stylesheet" href="css/projet.css">
 	<link rel="icon" type="image/png" href="Images/favicon.png" />
 	<script type="text/javascript" src="script/jquery-2.1.1.min.js"></script>
@@ -12,24 +12,22 @@
 	<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div id="prenom" class="boite">
-		<a href="http://www.pricilladegardin.xyz">&#8598;</a>
+	<div class="fleches">
+		<a id="back" href="http://www.pricilladegardin.xyz">&#8598;</a>
+		<a id="next" href="projet_horsdoeuvre.html" class="infobulle">&#x2192;<span>Utilisez les flèches du clavier pour changer de projet</span></a>
 	</div>
-
-	<div id="contact" class="boite">
-		<a href="projet_horsdoeuvre.html">&#x2192;</a>
-	</div>
+	
+<div id="contenu">
 	<div id="description">
-		<p>
-			<div id="italic">Festival Transhumance</div></br>
+			<div id="titre">Festival Transhumance</div>
 			
-			Festival de musiques électroniques situé sur les remparts de la cité Vauban</br>
+			<p>Festival de musiques électroniques situé sur les remparts de la cité Vauban</br>
 			de Briançon.</br>
-			Le programme de l'événement est pensé comme un dépliant reprenant les codes de la carte topographique.</br></br>
-			29,7 x 42 cm déplié</br>
-			2013
-		</p>
+			Le programme de l'événement est pensé comme un dépliant reprenant les codes de la carte topographique.</p>
+			<p>29,7 x 42 cm déplié</br>
+			2013</p>
 	</div>
+	<div id="loading"></div>
 	<div id="images" onclick="next(7)">
 		<img id="img1" src="Images/projet_transhumance/transhumance1.jpg" style="z-index:1"/>
 		<img id="img2" src="Images/projet_transhumance/transhumance2.jpg" style="z-index:-1"/>

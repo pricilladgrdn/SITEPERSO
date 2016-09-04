@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title>&#10697; DATA</title>
+	<title>DATA</title>
 	<link rel="stylesheet" href="css/projet.css">
 	<link rel="icon" type="image/png" href="Images/favicon.png" />
 	<script type="text/javascript" src="script/jquery-2.1.1.min.js"></script>
@@ -12,24 +12,24 @@
 	<link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700italic,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div id="prenom" class="boite">
-		<a href="http://www.pricilladegardin.xyz">&#8598;</a>
+	<div class="fleches">
+		<a id="back" href="http://www.pricilladegardin.xyz">&#8598;</a>
+		<a id="next" href="projet_surkrut.html" class="infobulle">&#x2192;<span>Utilisez les flèches du clavier pour changer de projet</span></a>
 	</div>
-	<div id="contact" class="boite">
-		<a href="projet_surkrut.html">&#x2192;</a>
-	</div>
+	
+<div id="contenu">
 	<div id="description">
-		<p>
-			<div id="italic">Combien de temps</br> derrière un écran ?</div></br>
+	
+			<div id="titre">Combien de temps</br> derrière un écran ?</div>
 			
-			Projet d'affiches, réalisées à partir</br>
-			de données questionnant notre rapport quotidien avec les trois médiums télévision, ordinateur et téléphone portable.</br>
-			<a href="https://www.data.gouv.fr/fr/datasets/pratiques-culturelles-des-francais-resultats-de-l-enquete-2008/" target="blank">Données</a> issues d'un enquête menée </br>
-			par le gouvernement sur les Pratiques culturelles des Français.</br></br>
-			80 x 60 cm</br>
-			2015
-		</p>
+			<p>Projet d'affiches, réalisées à partir</br>
+			de données questionnant notre rapport quotidien avec les trois médiums : télévision, ordinateur et téléphone portable.</p>
+			<p>Données issues d'une <a href="https://www.data.gouv.fr/fr/datasets/pratiques-culturelles-des-francais-resultats-de-l-enquete-2008/" target="blank">enquête</a> menée </br>
+			par le gouvernement sur les Pratiques culturelles des Français.</p>
+			<p>80 x 60 cm</br>
+			2015</p>
 	</div>
+	<div id="loading"></div>
 	<div id="images" onclick="next(6)">
 		<img id="img1" src="Images/projet_data/index-01.jpg" style="z-index:1"/>
 		<img id="img2" src="Images/projet_data/index-02.jpg" style="z-index:-1"/>
