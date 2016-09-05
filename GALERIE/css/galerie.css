@@ -49,83 +49,55 @@ html,body{
 .image {
 	width: 100%;
 	height: 100%;
-	background: url(../Images/IMG_20160722_093444.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
 }
-
-.image1{
-	background: url(../Images/IMG_20160722_093444.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center center;
-
+#image15{
+	background: url(../images/15-horsdoeuvre.jpg);
 }
-
-.image2{
-	background: url(../Images/IMG_20160806_145014.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center center;
-
+.image14{
+	background: url(../images/14-horsdoeuvre.jpg);
 }
-
-.image3{
-	background: url(../Images/IMG_20160806_145314.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center center;
-
+.image13{
+	background: url(../images/13-agedor.jpg);
 }
-
-.image4{
-	background: url(../Images/IMG_20160806_152739.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center center;
-
+.image12{
+	background: url(../images/12-agedor.jpg);
 }
-
-.image5{
-	background: url(../Images/IMG_20160806_153806.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center center;
-
+.image11{
+	background: url(../images/11-imprimerie.jpg);
 }
-
-.image6{
-	background: url(../Images/IMG_20160812_151211.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center center;
-
+.image10{
+	background: url(../images/10-imprimerie.jpg);
 }
-
-.image7{
-	background: url(../Images/IMG_20160819_190006.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center center;
-
+.image9{
+	background: url(../images/9-snowball.JPG);
 }
-
 .image8{
-	background: url(../Images/IMG_20160722_093444.jpg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center center;
-
+	background: url(../images/8-snowball.JPG);
+}
+.image7{
+	background: url(../images/7-chambord.JPG);
+}
+.image6{
+	background: url(../images/6-chambord.JPG);
+}
+.image5{
+	background: url(../images/5-chambord.JPG);
+}
+.image4{
+	background: url(../images/4-violence.jpg);
+}
+.image3{
+	background: url(../images/3-rayogramme.JPG);
+}
+.image2{
+	background: url(../images/2-rayogramme.JPG);
+}
+.image1{
+	background: url(../images/1-rayogramme.jpeg);
 }
 
 /* D I V  L E G E N D E */
